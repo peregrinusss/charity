@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Добрые дела</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <main class="main main-fit-reg">
+        <section>
+          <div class="container container_whiteback enter__container">
+            <div class="enter login">
+
+              <!-- <input type="file" id="inputFile" accept=".png, .jpg, .jpeg, .svg">
+              <br>
+              <br>
+              <br>
+              <div id="result"></div> -->
+
+              <h1 class="enter__title">Регистрация</h1>
+              <form action="" id="register-form" novalidate="novalidate">
+                <div class="info__item">
+                  <div class="info__item__input input_box">
+                    <input
+                      type="email"
+                      name="enter_email"
+                      placeholder="Введите ваш email"
+                      value=""
+                      id="enter_email"
+                    />
+                  </div>
+                </div>
+                <div class="info__item">
+                  <div class="info__item__input input_box">
+                    <input
+                      class="password-input"
+                      type="password"
+                      name="enter_password"
+                      placeholder="Введите пароль"
+                      autocomplete="off"
+                      id="enter_password"
+                    />
+                    <div class="password-eye"></div>
+                  </div>
+                </div>
+                <div class="info__item">
+                  <div class="info__item__input input_box">
+                    <input
+                      class="password-input"
+                      type="password"
+                      name="pass_repeat"
+                      placeholder="Введите пароль ещё раз"
+                      id="pass_repeat"
+                      autocomplete="off"
+                    />
+                    <div class="password-eye"></div>
+                  </div>
+                </div>
+                <div class="fieldset">
+                  <div class="info__item">
+                    <div class="info__subtitle">
+                      <p>
+                        <b> Добавьте информацию о себе </b>
+                      </p>
+                    </div>
+                    <div class="input_box">
+                      <input type="text" name="reg_name" id="reg_name" placeholder="Имя, фамилия" value="">
+                    </div>
+                  </div>
+
+                  <div class="info__item">
+                    <div class="info__subtitle">
+                      <p>
+                        <b> Аватар пользователя </b>
+                      </p>
+                    </div>
+
+                    <div class="info__cover_upload info__cover_upload_ava input-file-ava">
+                      <div class="upload__area js-upload-widget" data-size="5">
+                        <input type="hidden" name="actionItemAuthorImg" value="">
+                        <img class="upload__area_img" src="img/icons/upload.svg" alt="">
+                        <span class="upload__area_text">
+                          Перетащите фото в это поле или
+                          <span class="user-file color_green"> выберите файл </span>
+                          с вашего компьютера
+                        </span>
+                        <div class="inner-div js-upload-widget-button" style="
+                            position: relative;
+                            overflow: hidden;
+                            direction: ltr;
+                          ">
+                          <input qq-button-id="bd28953d-b7d3-4521-b4a7-3454fdd7b847" title="Выберите файл" type="file" id="reg_file" accept=".png, .jpg, .jpeg" name="reg_file" style="
+                              position: absolute;
+                              right: 0px;
+                              top: 0px;
+                              font-family: Arial;
+                              font-size: 118px;
+                              margin: 0px;
+                              padding: 0px;
+                              cursor: pointer;
+                              opacity: 0;
+                              height: 100%;
+                            ">
+                        </div>
+                        <div class="image-box image-preview js-upload-widget-preview" style="background-image: url()"></div>
+                      </div>
+                      <div class="upload__require-box">
+                        <div class="require-box__item">
+                          <p class="small_bold">
+                            <span class="fw-normal">
+                              Желательный размер не более
+                              <br>
+                            </span>
+                            200×200 px, не более 1 Мб
+                          </p>
+                        </div>
+                        <div class="require-box__item">
+                          <p class="small_bold">
+                            <span class="fw-normal">
+                              Допустимые форматы
+                              <br>
+                              изображения:
+                            </span>
+                            JPG, GIF, PNG
+                          </p>
+                        </div>
+                        <div class="require-box__item">
+                          <p class="small_bold">
+                            Важно!
+                            <span class="fw-normal">
+                              На фото не должно быть
+                              <br>
+                              надписей и водяных знаков
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="pp__check">
+                  <div class="pp-check pp-check_c">
+                    <div class="pp-check__checkbox">
+                      <div class="check">
+                        <input
+                          class="styled-checkbox"
+                          id="agree1"
+                          value="Да"
+                          name="agree"
+                          type="checkbox"
+                        />
+                        <label for="agree1"></label>
+                      </div>
+                    </div>
+                    <div class="pp-check__text">
+                      <span>
+                        <label for="agree1">
+                          Нажимая кнопку далее, я подтверждаю, что
+                          ознакомился и принимаю
+                          <a href="/politika-personalnyh-dannyh.html"
+                            >политику обработки персональных данных</a
+                          ></label
+                        >
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-block__more">
+                  <button type="submit" class="content-block-more">
+                    <span>Далее</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="graph-modal popup-cropp cropp">
+      <div class="graph-modal__container cropp-ava" role="dialog" aria-modal="true" data-graph-target="cropp-ava">
+        <div class="graph-modal__content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModal">Выберите миниатюру</h5>
+          </div>
+          <div class="modal-body modal-body1 border-bottom">
+            <div id="croppieContainer"></div>
+          </div>
+          <div class="modal-footer">
+            <div class="content-block__more">
+              <button class="content-block-more btn btn-secondary crop-destroy js-modal-close" data-dismiss="modal">
+                <span>Отменить</span>
+              </button>
+            </div>
+            <div class="content-block__more">
+              <button type="button" id="cropBtn" class="content-block-more btn btn-primary save-modal js-modal-close">
+                <span>Сохранить</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

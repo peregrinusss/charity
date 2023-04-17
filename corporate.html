@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Добрые дела</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <main class="main">
+        <div class="container">
+          <div class="info__item border-bottom">
+            <div class="content-block__more profile__btn-back profile__btn-exit">
+              <a href="#" type="submit" class="content-block-more">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#arrow-left"></use>
+                </svg>
+                <span>Назад</span>
+              </a>
+            </div>
+          </div>
+          <div class="pp__content pp__content_questionnaire">
+            <div class="pp-cross"></div>
+            <h4 class="coll__title">Анкета для создания корпоративного сбора</h4>
+            <form
+              method=""
+              id="corporate"
+              class="pp-content__form js-city-action-add"
+              enctype="multipart/form-data"
+              novalidate="novalidate"
+            >
+              <div class="fieldset">
+                <h5>Информация о компании</h5>
+                <div class="info__item">
+                  <div class="input_box">
+                    <div class="info__subtitle">
+                      <span class="field-req">Название организации</span>
+                    </div>
+                    <input
+                    type="text"
+                    name="corp_org_name"
+                  />
+                  </div>
+                </div>
+
+                <div class="info__item border-bottom-bold">
+                  <div class="info__subtitle">
+                    <p>
+                      <b> Логотип организации </b>
+                    </p>
+                  </div>
+                  <div class="upload__ava"></div>
+                  <div class="info__cover_upload info__cover_upload_ava input-file-ava">
+                    <div class="upload__area js-upload-widget" data-size="5">
+                      <input type="hidden" name="actionItemAuthorImg" value="">
+                      <img class="upload__area_img" src="img/icons/upload.svg" alt="">
+                      <span class="upload__area_text">
+                        Перетащите фото в это поле или
+                        <span class="user-file color_green"> выберите файл </span>
+                        с вашего компьютера
+                      </span>
+                      <div class="inner-div js-upload-widget-button" style="
+                          position: relative;
+                          overflow: hidden;
+                          direction: ltr;
+                        ">
+                        <input qq-button-id="bd28953d-b7d3-4521-b4a7-3454fdd7b847" title="Выберите файл" type="file" id="reg_file" accept=".png, .jpg, .jpeg" name="reg_file" style="
+                            position: absolute;
+                            right: 0px;
+                            top: 0px;
+                            font-family: Arial;
+                            font-size: 118px;
+                            margin: 0px;
+                            padding: 0px;
+                            cursor: pointer;
+                            opacity: 0;
+                            height: 100%;
+                          ">
+                      </div>
+                      <div class="image-box image-preview js-upload-widget-preview" style="background-image: url()"></div>
+                    </div>
+                    <div class="upload__require-box">
+                      <div class="require-box__item">
+                        <p class="small_bold">
+                          <span class="fw-normal">
+                            Желательный размер не более
+                            <br>
+                          </span>
+                          200×200 px, не более 1 Мб
+                        </p>
+                      </div>
+                      <div class="require-box__item">
+                        <p class="small_bold">
+                          <span class="fw-normal">
+                            Допустимые форматы
+                            <br>
+                            изображения:
+                          </span>
+                          JPG, GIF, PNG
+                        </p>
+                      </div>
+                      <div class="require-box__item">
+                        <p class="small_bold">
+                          Важно!
+                          <span class="fw-normal">
+                            На фото не должно быть
+                            <br>
+                            надписей и водяных знаков
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fieldset">
+                <h5>Контакнтное лицо от организации</h5>
+                <div class="info__item">
+                  <div class="input_box">
+                    <div class="info__subtitle">
+                      <span class="field-req">ФИО</span>
+                    </div>
+                    <input
+                    type="text"
+                    name="corp_name"
+                  />
+                  </div>
+                </div>
+                <div class="info__item">
+                  <div class="input_box">
+                    <div class="info__subtitle">
+                      <span class="field-req">Почта</span>
+                    </div>
+                    <input
+                    type="email"
+                    name="corp_email"
+                  />
+                  </div>
+                </div>
+                <div class="info__item border-bottom-bold">
+                  <div class="input_box">
+                    <div class="info__subtitle">
+                      <span class="field-req">Контактный телефон</span>
+                    </div>
+                    <input
+                    type="tel"
+                    name="corp_tel"
+                    id="corp_tel"
+                  />
+                  </div>
+                </div>
+              </div>
+
+              <div class="fieldset">
+                <h5>Информация о сборе</h5>
+                <div class="info__item">
+                  <div class="input_box">
+                    <div class="info__subtitle">
+                      <span class="field-req">Название сбора</span>
+                    </div>
+                    <input
+                      type="text"
+                      name="nameAction"
+                      id="nameAction"
+                    />
+                  </div>
+                </div>
+                <div class="info__item">
+                  <div class="input_box">
+                    <div class="info__subtitle">
+                      <span class="field-req">Цель сбора</span>
+                    </div>
+                    <input
+                      type="text"
+                      name="purpose"
+                      id="purpose"
+                    />
+                  </div>
+                </div>
+
+                <div class="input-group__row info__item border-bottom">
+                  <div class="input-date_box">
+                    <div class="info__subtitle">
+                      <span class="field-req">Дата окончания сбора</span>
+                    </div>
+                    <div class="input_box data-input">
+                      <div class="sn-img">
+                        <img src="img/icons/calendar.svg" alt="calendar" />
+                      </div>
+                      <input
+                        name="dateEnd"
+                        id="date-end"
+                        class="datepicker-here"
+                        type="text"
+                        value=""
+                        placeholder=""
+                        readonly
+                      />
+                    </div>
+                  </div>
+
+                  <div class="input_box input_box-goal">
+                    <div class="info__subtitle">
+                      <span class="field-req">Финансовая цель, руб</span>
+                    </div>
+                    <input id="goal" type="number" name="goal" />
+                  </div>
+                </div>
+
+                <div
+                  class="input-group__categgories input-group__reasons info__item border-bottom"
+                >
+                  <div class="info__subtitle">
+                    <p class="field-req">
+                      <b> Повод сбора (выберите один) </b>
+                    </p>
+                  </div>
+                  <div class="reasons-box">
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-1" value="Просто так" checked="">
+                        <label for="reason-1">Просто так</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-2" value="День защиты детей">
+                        <label for="reason-2">День защиты детей</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-3" value="1 сентября">
+                        <label for="reason-3">1 сентября</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-4" value="Корпоратив">
+                        <label for="reason-4">Корпоратив</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-5" value="Хорошая привычка">
+                        <label for="reason-5">Хорошая привычка </label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-6" value="Спортивное событие">
+                        <label for="reason-6">Спортивное событие</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-7" value="Выставка">
+                        <label for="reason-7">Выставка</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-8" value="8 марта">
+                        <label for="reason-8">8 марта</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-9" value="Выпускной">
+                        <label for="reason-9">Выпускной</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-10" value="Годовщина свадьбы">
+                        <label for="reason-10">Годовщина свадьбы</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-11" value="Юбилей">
+                        <label for="reason-11">Юбилей</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-12" value="Мальчишник">
+                        <label for="reason-12">Мальчишник</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-13" value="Девичник">
+                        <label for="reason-13">Девичник</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-14" value="День рождения">
+                        <label for="reason-14">День рождения</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-15" value="День любви">
+                        <label for="reason-15">День любви</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-16" value="День добра">
+                        <label for="reason-16">День добра</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-17" value="Помолвка">
+                        <label for="reason-17">Помолвка</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-18" value="День счастья">
+                        <label for="reason-18">День счастья</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-19" value="Повод быть полезным">
+                        <label for="reason-19">Повод быть полезным</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-20" value="Новый год">
+                        <label for="reason-20">Новый год</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-21" value="Новоселье">
+                        <label for="reason-21">Новоселье</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-22" value="Рождение ребенка">
+                        <label for="reason-22">Рождение ребенка</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-23" value="Свадьба">
+                        <label for="reason-23">Свадьба</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="radio" name="reason" id="reason-new" value="new">
+                        <label for="reason-new">Другое</label>
+                    </div>
+                </div>
+                  <div class="reasons-field input_box js-reason-spoiler" style="display: none;">
+                    <input
+                      type="text"
+                      name="reason_new_name"
+                      id="reason-new-name"
+                      placeholder="Указать свой повод"
+                      maxlength="30"
+                    />
+                  </div>
+                </div>
+
+                <div class="input_box input_box_textarea info__item border-bottom">
+                  <div class="info__subtitle">
+                    <p class="field-req">
+                      <b>Описание сбора</b>
+                    </p>
+                  </div>
+                  <div class="info__item__input textarea_box">
+                    <textarea placeholder="" id="col_desc" name="col_desc" rows="6"></textarea>
+                    <div class="textarea_resize"></div>
+                    <div class="textarea_resize"></div>
+                    <div class="textarea_resize"></div>
+                  </div>
+                </div>
+
+                <div class="info__subtitle">
+                  <p class="field-req">
+                    <b> Обложка сбора </b>
+                  </p>
+                </div>
+
+                <div class="info__cover_upload input-file-cover border-bottom">
+                  <div class="upload__area upload__area-cover js-upload-widget" data-size="5">
+                    <input type="hidden" name="showcaseItemMainImage" value="" />
+                    <img
+                      class="upload__area_img"
+                      src="img/icons/upload.svg"
+                      alt=""
+                    />
+                    <span class="upload__area_text">
+                      Перетащите фото в это поле или
+                      <span class="user-file color_green"> выберите файл </span>
+                      с вашего компьютера
+                    </span>
+                    <div
+                      class="inner-div js-upload-widget-button"
+                      style="position: relative; overflow: hidden; direction: ltr"
+                    >
+                      <input
+                        qq-button-id="8370dd11-cb86-440f-9da2-0a7fcf620a99"
+                        title="Выберите файл"
+                        type="file"
+                        name="col_cover"
+                        id="col_cover"
+                        accept=".png, .jpg, .jpeg"
+                        style="
+                          position: absolute;
+                          right: 0px;
+                          top: 0px;
+                          font-family: Arial;
+                          font-size: 118px;
+                          margin: 0px;
+                          padding: 0px;
+                          cursor: pointer;
+                          opacity: 0;
+                          height: 100%;
+                        "
+                      />
+                    </div>
+                    <div
+                      class="image-box image-preview js-upload-widget-preview"
+                      style="background-image: url()"
+                    ></div>
+                  </div>
+                  <div class="upload__require-box">
+                    <div class="require-box__item">
+                      <p class="small_bold">
+                        <span class="fw-normal">
+                          Желательный размер не менее
+                          <br />
+                        </span>
+                        1420×660 px, не более 5 Мб
+                      </p>
+                    </div>
+                    <div class="require-box__item">
+                      <p class="small_bold">
+                        <span class="fw-normal">
+                          Допустимые форматы
+                          <br />
+                          изображения:
+                        </span>
+                        JPG, GIF, PNG
+                      </p>
+                    </div>
+                    <div class="require-box__item">
+                      <p class="small_bold">
+                        Важно!
+                        <span class="fw-normal">
+                          На фото не должно быть
+                          <br />
+                          надписей и водяных знаков
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fieldset">
+                <div class="input-group__categgories info__item border-bottom">
+                  <div class="info__subtitle">
+                    <p>
+                      <b> Фильтры для поиска</b>
+                    </p>
+                  </div>
+                  <div class="info__descript">
+                    <span>Выберите один или несколько. Фильтр поможет найти эту акцию для целевого пожертвования</span>
+                  </div>
+                  <div class="categories-box" id="col_filter">
+                    <div class="categories-box__item">
+                        <input type="checkbox" name="col_filter" id="filter-1" value="1">
+                        <label for="filter-1">Дети</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="checkbox" name="col_filter" id="filter-2" value="2">
+                        <label for="filter-2">Подростки</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="checkbox" name="col_filter" id="filter-3" value="3">
+                        <label for="filter-3">Пожилые</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="checkbox" name="col_filter" id="filter-4" value="4">
+                        <label for="filter-4">Люди в трудной жизненной ситуации</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="checkbox" name="col_filter" id="filter-5" value="5">
+                        <label for="filter-5">Животные</label>
+                    </div>
+                    <div class="categories-box__item">
+                        <input type="checkbox" name="col_filter" id="filter-6" value="6">
+                        <label for="filter-6">Культурно-историческое наследие</label>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="info__item border-bottom">
+                <div class="info__subtitle">
+                  <p class="field-req">
+                    <b> Фото-галерея акции </b>
+                  </p>
+                </div>
+                <div class="info__item__gallery" name="gallery">
+                  <div class="gallery__item">
+                    <div class="input-file-gallery" id="gallery-wrap">
+                    </div>
+                    <div
+                      class="info__cover_upload gallery__upload  js-upload-widget"
+                      data-multiple="1"
+                      data-size="5"
+                      data-template="#js-showcase-gallery-item"
+                      id="input-gallery"
+                    >
+                      <div class="upload__area upload__area-small multiple">
+                        <img
+                          class="upload__area_img"
+                          src="img/icons/upload_small.svg"
+                          alt="upload_small"
+                        />
+                        <span class="upload__area_text">
+                          <div class="user-file">Загрузить изображение</div>
+                        </span>
+                        <div
+                          class="inner-div js-upload-widget-button"
+                          style="
+                            position: relative;
+                            overflow: hidden;
+                            direction: ltr;
+                          "
+                        >
+                          <input
+                            qq-button-id="1ee2334e-e121-44ef-8bf8-a255a41e88df"
+                            title="Выберите файл"
+                            multiple=""
+                            type="file"
+                            name="col_gallery"
+                            id="col_gallery"
+                            style="
+                              position: absolute;
+                              right: 0px;
+                              top: 0px;
+                              font-family: Arial;
+                              font-size: 118px;
+                              margin: 0px;
+                              padding: 0px;
+                              cursor: pointer;
+                              opacity: 0;
+                              height: 100%;
+                            "
+                            accept=".png, .jpg, .jpeg"
+                          />
+                        </div>
+                        <div class="image-box image-preview js-upload-widget-preview"></div>
+                      </div>
+                      <div class="upload__require-box upload__require-box-small">
+                        <div class="require-box__item">
+                          <p class="small_bold">
+                            <span class="fw-normal"
+                              >Допустимые форматы <br />изображения:
+                            </span>
+                            JPG, GIF, PNG
+                          </p>
+                        </div>
+                        <div class="require-box__item">
+                          <p class="small_bold">
+                            <span class="fw-normal"> Размер файла не более </span>
+                            5 Мб
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fieldset">
+                <div class="input-group__categgories info__item">
+                  <div class="info__subtitle">
+                    <p class="field-req">
+                      <b> Выбор фонда </b>
+                    </p>
+                  </div>
+                  <div class="pp-funds__list" id="funds-list">
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4645"
+                        name="fund"
+                        id="fund4645"
+                        checked=""
+                      />
+                      <label for="fund4645" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Доброе дело»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+
+                          <span class="pp-fund__reasons-label"
+                            >люди в трудной жизненной ситуации</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4661"
+                        name="fund"
+                        id="fund4661"
+                      />
+                      <label for="fund4661" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Нижегородский»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4664"
+                        name="fund"
+                        id="fund4664"
+                      />
+                      <label for="fund4664" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Фонд «Нижегородский онкологический научный центр»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4675"
+                        name="fund"
+                        id="fund4675"
+                      />
+                      <label for="fund4675" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Нижегородский региональный благотворительный фонд «Земля
+                          нижегородская». Нам 25 лет.
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label"
+                            >культурно-историческое наследие</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4676"
+                        name="fund"
+                        id="fund4676"
+                      />
+                      <label for="fund4676" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Волонтерское движение «Милосердие»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label"
+                            >люди в трудной жизненной ситуации</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4677"
+                        name="fund"
+                        id="fund4677"
+                      />
+                      <label for="fund4677" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Время РАСсвета»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4678"
+                        name="fund"
+                        id="fund4678"
+                      />
+                      <label for="fund4678" class="pp-fund__label">
+                        <div class="pp-fund__title">«Территория добра»</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">пожилые</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4651"
+                        name="fund"
+                        id="fund4651"
+                      />
+                      <label for="fund4651" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Жизнь без границ»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+
+                          <span class="pp-fund__reasons-label"
+                            >люди в трудной жизненной ситуации</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4812"
+                        name="fund"
+                        id="fund4812"
+                      />
+                      <label for="fund4812" class="pp-fund__label">
+                        <div class="pp-fund__title">Фонд «Дети без мам»</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="5360"
+                        name="fund"
+                        id="fund5360"
+                      />
+                      <label for="fund5360" class="pp-fund__label">
+                        <div class="pp-fund__title">Хоккей для всех</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="5611"
+                        name="fund"
+                        id="fund5611"
+                      />
+                      <label for="fund5611" class="pp-fund__label">
+                        <div class="pp-fund__title">Сострадание НН</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">Животные</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="7123"
+                        name="fund"
+                        id="fund7123"
+                      />
+                      <label for="fund7123" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Нижегородская региональная благотворительная
+                          общественная организация инвалидов «Забота»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label"
+                            >люди в трудной жизненной ситуации</span
+                          >
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+
+                          <span class="pp-fund__reasons-label">пожилые</span>
+
+                          <span class="pp-fund__reasons-label">дети</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="8701"
+                        name="fund"
+                        id="fund8701"
+                      />
+                      <label for="fund8701" class="pp-fund__label">
+                        <div class="pp-fund__title">НООО «Сияние»</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="8703"
+                        name="fund"
+                        id="fund8703"
+                      />
+                      <label for="fund8703" class="pp-fund__label">
+                        <div class="pp-fund__title">НРООИ «Инватур»</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label"
+                            >люди в трудной жизненной ситуации</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="8779"
+                        name="fund"
+                        id="fund8779"
+                      />
+                      <label for="fund8779" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          МБОО «Сообщество семей слепоглухих»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">пожилые</span>
+
+                          <span class="pp-fund__reasons-label"
+                            >люди в трудной жизненной ситуации</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="10670"
+                        name="fund"
+                        id="fund10670"
+                      />
+                      <label for="fund10670" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Во Благо — Дар»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label"
+                            >помощь животным</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="24340"
+                        name="fund"
+                        id="fund24340"
+                      />
+                      <label for="fund24340" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Планета кошек»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label"
+                            >помощь животным</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="25001"
+                        name="fund"
+                        id="fund25001"
+                      />
+                      <label for="fund25001" class="pp-fund__label">
+                        <div class="pp-fund__title">«Угол»</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">животные</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="25052"
+                        name="fund"
+                        id="fund25052"
+                      />
+                      <label for="fund25052" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Больше чем можешь»
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fieldset">
+                <div class="pp__check">
+                  <div class="pp-check pp-check_c">
+                    <div class="pp-check__checkbox">
+                      <div class="check">
+                        <input
+                          class="styled-checkbox"
+                          id="agree1"
+                          value=""
+                          name="enter_checkbox1"
+                          type="checkbox"
+                        />
+                        <label for="agree1"></label>
+                      </div>
+                    </div>
+                    <div class="pp-check__text">
+                      <span>
+                        <label for="agree1">
+                          Я согласен на обработку персональных данных в
+                        соответствии с Федеральным законом от 27.07.2006
+                        № 152-ФЗ
+                        </label
+                        >
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pp__check">
+                  <div class="pp-check pp-check_c">
+                    <div class="pp-check__checkbox">
+                      <div class="check">
+                        <input
+                          class="styled-checkbox"
+                          id="agree2"
+                          value=""
+                          name="enter_checkbox2"
+                          type="checkbox"
+                        />
+                        <label for="agree2"></label>
+                      </div>
+                    </div>
+                    <div class="pp-check__text">
+                      <span>
+                        <label for="agree2">
+                          Я согласен с
+                        <a
+                          href="#"
+                          target="_blank"
+                          >условиями размещения информации, изображений, объектов
+                          авторского права и иных результатов интеллектуальной
+                          деятельности</a
+                        </label
+                        >
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" name="recaptcha" />
+                <div class="content-block__more content-block__more_darkred">
+                  <button
+                    type="submit"
+                    class="content-block-more next-step-proj"
+                    data-next="end"
+                  >
+                    <span>Опубликовать</span>
+                  </button>
+                </div>
+
+                <span class="pp-content__information">
+                  Нажимая кнопку «Опубликовать», я подтверждаю, что ознакомился с
+                  <a href="#"
+                    >Политикой обработки персональных данных АНО «Центр 800»</a
+                  >
+                  и даю согласие на обработку моих персональных данных, указанных
+                  в форме анкеты, а также получение обратной
+                  информации
+                </span>
+              </div>
+            </form>
+            <div class="coll-success" style="display: none;">
+              <h2 class="coll-success__title">
+                Успешно
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#success"></use>
+                </svg>
+              </h2>
+              <span>Благодарим вас, ваша заявка на модерации</span>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+    <div class="graph-modal popup-cropp cropp">
+      <div class="graph-modal__container cropp-cover" role="dialog" aria-modal="true" data-graph-target="cropp-cover">
+        <div class="graph-modal__content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModal">Выберите миниатюру</h5>
+          </div>
+          <div class="modal-body modal-body1 border-bottom">
+            <div id="croppieContainer"></div>
+          </div>
+          <div class="modal-footer">
+            <div class="content-block__more">
+              <button class="content-block-more btn btn-secondary crop-destroy js-modal-close" data-dismiss="modal">
+                <span>Отменить</span>
+              </button>
+            </div>
+            <div class="content-block__more">
+              <button type="button" id="cropBtn" class="content-block-more btn btn-primary save-modal js-modal-close">
+                <span>Сохранить</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="graph-modal__container cropp-gallery" role="dialog" aria-modal="true" data-graph-target="cropp-gallery">
+        <div class="graph-modal__content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModal">Выберите миниатюру</h5>
+          </div>
+          <div class="modal-body modal-body1 border-bottom">
+            <div id="croppieContainer"></div>
+          </div>
+          <div class="modal-footer">
+            <div class="content-block__more">
+              <button class="content-block-more btn btn-secondary crop-destroy js-modal-close" data-dismiss="modal">
+                <span>Отменить</span>
+              </button>
+            </div>
+            <div class="content-block__more">
+              <button type="button" id="cropBtn" class="content-block-more btn btn-primary save-modal js-modal-close">
+                <span>Сохранить</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="graph-modal__container cropp-ava" role="dialog" aria-modal="true" data-graph-target="cropp-ava">
+        <div class="graph-modal__content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModal">Выберите миниатюру</h5>
+          </div>
+          <div class="modal-body modal-body1 border-bottom">
+            <div id="croppieContainer"></div>
+          </div>
+          <div class="modal-footer">
+            <div class="content-block__more">
+              <button class="content-block-more btn btn-secondary crop-destroy js-modal-close" data-dismiss="modal">
+                <span>Отменить</span>
+              </button>
+            </div>
+            <div class="content-block__more">
+              <button type="button" id="cropBtn" class="content-block-more btn btn-primary save-modal js-modal-close">
+                <span>Сохранить</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
