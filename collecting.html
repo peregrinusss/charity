@@ -35,94 +35,75 @@
               enctype="multipart/form-data"
               novalidate="novalidate"
             >
-              <div class="fieldset">
+              <div class="fieldset border-bottom-bold">
                 <h5>Информация о себе</h5>
-                <div class="info__item">
-                  <div class="input_box">
+                <div class="coll__user">
+                  <div class="info__item">
                     <div class="info__subtitle">
-                      <span>Имя, фамилия</span>
+                      <p>
+                        <b> Аватар пользователя </b>
+                      </p>
                     </div>
-                    <input
-                    type="text"
-                    name="name"
-                    placeholder="Имя, фамилия"
-                    value="omni.aa"
-                    readonly
-                    class="input-disabled"
-                  />
-                  </div>
-                </div>
-                <div class="info__item">
-                  <div class="input-group__row">
-                    <div class="input_box">
-                      <div class="info__subtitle">
-                        <span>Почта</span>
+                    <div class="upload__ava"></div>
+                    <div class="info__cover_upload info__cover_upload_ava">
+                      <div class="upload__area upload-disabled js-upload-widget" data-size="5">
+                        <input type="hidden" name="actionItemAuthorImg" value="" />
+                        <img
+                          class="upload__area_img"
+                          src="img/icons/upload.svg"
+                          alt=""
+                        />
+                        <span class="upload__area_text">
+                          Перетащите фото в это поле или
+                          <span class="user-file color_green"> выберите файл </span>
+                          с вашего компьютера
+                        </span>
+                        <div
+                          class="inner-div js-upload-widget-button"
+                          style="
+                            position: relative;
+                            overflow: hidden;
+                            direction: ltr;
+                          "
+                        >
+                        </div>
+                        <div
+                          class="image-box image-preview js-upload-widget-preview"
+                          style="background-image: url('./img/avatar.jpeg')"
+                        ></div>
                       </div>
-                      <input
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        value="omni.aa@yandex.ru"
+                    </div>
+                  </div>
+                  <div class="coll__user-info">
+                    <div class="info__item">
+                      <div class="input_box">
+                        <div class="info__subtitle">
+                          <span>Имя, фамилия</span>
+                        </div>
+                        <input
+                        type="text"
+                        name="name"
+                        placeholder="Имя, фамилия"
+                        value="omni.aa"
                         readonly
                         class="input-disabled"
                       />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="info__item border-bottom-bold">
-                  <div class="info__subtitle">
-                    <p>
-                      <b> Аватар пользователя </b>
-                    </p>
-                  </div>
-                  <div class="upload__ava"></div>
-                  <div class="info__cover_upload info__cover_upload_ava">
-                    <div class="upload__area upload-disabled js-upload-widget" data-size="5">
-                      <input type="hidden" name="actionItemAuthorImg" value="" />
-                      <img
-                        class="upload__area_img"
-                        src="img/icons/upload.svg"
-                        alt=""
-                      />
-                      <span class="upload__area_text">
-                        Перетащите фото в это поле или
-                        <span class="user-file color_green"> выберите файл </span>
-                        с вашего компьютера
-                      </span>
-                      <div
-                        class="inner-div js-upload-widget-button"
-                        style="
-                          position: relative;
-                          overflow: hidden;
-                          direction: ltr;
-                        "
-                      >
-                        <input
-                          qq-button-id="bd28953d-b7d3-4521-b4a7-3454fdd7b847"
-                          title="Выберите файл"
-                          type="file"
-                          name="file"
-                          disabled
-                          style="
-                            position: absolute;
-                            right: 0px;
-                            top: 0px;
-                            font-family: Arial;
-                            font-size: 118px;
-                            margin: 0px;
-                            padding: 0px;
-                            cursor: pointer;
-                            opacity: 0;
-                            height: 100%;
-                          "
-
-                        />
                       </div>
-                      <div
-                        class="image-box image-preview js-upload-widget-preview"
-                        style="background-image: url('./img/avatar.jpeg')"
-                      ></div>
+                    </div>
+                    <div class="info__item">
+                        <div class="input_box">
+                          <div class="info__subtitle">
+                            <span>Почта</span>
+                          </div>
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            value="omni.aa@yandex.ru"
+                            readonly
+                            class="input-disabled"
+                          />
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -167,7 +148,7 @@
                       <input
                         name="dateEnd"
                         id="date-end"
-                        class="datepicker-here"
+
                         type="text"
                         value=""
                         placeholder=""
@@ -180,7 +161,7 @@
                     <div class="info__subtitle">
                       <span class="field-req">Финансовая цель, руб</span>
                     </div>
-                    <input id="goal" type="number" name="goal" />
+                    <input id="goal" type="text" name="goal" />
                   </div>
                 </div>
 
@@ -367,31 +348,12 @@
                   <div class="upload__require-box">
                     <div class="require-box__item">
                       <p class="small_bold">
-                        <span class="fw-normal">
-                          Желательный размер не менее
-                          <br />
-                        </span>
-                        1420×660 px, не более 5 Мб
+                        Изображение должно быть горизонтальной <br> ориентации, формата JPG, JPEG, PNG.
                       </p>
                     </div>
                     <div class="require-box__item">
                       <p class="small_bold">
-                        <span class="fw-normal">
-                          Допустимые форматы
-                          <br />
-                          изображения:
-                        </span>
-                        JPG, GIF, PNG
-                      </p>
-                    </div>
-                    <div class="require-box__item">
-                      <p class="small_bold">
-                        Важно!
-                        <span class="fw-normal">
-                          На фото не должно быть
-                          <br />
-                          надписей и водяных знаков
-                        </span>
+                        Размер файла не более 2 Мб.
                       </p>
                     </div>
                   </div>
@@ -497,16 +459,17 @@
                       <div class="upload__require-box upload__require-box-small">
                         <div class="require-box__item">
                           <p class="small_bold">
-                            <span class="fw-normal"
-                              >Допустимые форматы <br />изображения:
-                            </span>
-                            JPG, GIF, PNG
+                            Допустимые форматы изображения: JPG, JPEG, PNG.
                           </p>
                         </div>
                         <div class="require-box__item">
                           <p class="small_bold">
-                            <span class="fw-normal"> Размер файла не более </span>
-                            5 Мб
+                            Размер каждого файла не более 2 Мб.
+                          </p>
+                        </div>
+                        <div class="require-box__item">
+                          <p class="small_bold">
+                            Для красоты вашей галереи рекомендуем вам <br> использовать изображения одной ориентации
                           </p>
                         </div>
                       </div>

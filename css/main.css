@@ -3937,6 +3937,7 @@ input:focus, textarea:focus {
 
 .upload-disabled {
   opacity: 0.5;
+  cursor: not-allowed;
 }
 .upload-disabled:hover {
   border-color: #f2f2f2 !important;
@@ -4102,6 +4103,12 @@ input:focus, textarea:focus {
   border-top: 2px solid #36f8db;
 }
 
+.coll-success {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
 .coll-success__title {
   font-size: 50px;
   color: #3344E5;
@@ -4117,6 +4124,33 @@ input:focus, textarea:focus {
 }
 .coll-success span {
   font-size: 20px;
+}
+
+.coll__user {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 1fr;
+  grid-template-columns: 300px 1fr;
+  gap: 50px;
+}
+@media (max-width: 960px) {
+  .coll__user {
+    gap: 0;
+    -ms-grid-columns: 240px 1fr;
+    grid-template-columns: 240px 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .coll__user {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .password-eye {
