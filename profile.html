@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Добрые дела</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <main class="main">
+        <section class="profile">
+          <div class="container container_whiteback container-main">
+            <div class="profile__body">
+              <div class="profile__hat border-bottom">
+                <div class="profile__user">
+                  <img src="img/avatar.jpeg" class="profile__avatar" alt="">
+                  <h1 class="enter__title profile__title">
+                    Романова Марина Викторовна
+                  </h1>
+                </div>
+                <div class="content-block__more profile__btn profile__btn-exit">
+                  <a href="#" type="submit" class="content-block-more">
+                    <span> Выход </span>
+                    <svg class="">
+                      <use xlink:href="img/sprite.svg#exit"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="tabs profile__tabs" data-tabs="profile">
+                <ul class="tabs__nav">
+                  <li class="tabs__nav-item content-block__more profile__btn">
+                    <button
+                      class="tabs__nav-btn content-block-more"
+                      type="button"
+                    >
+                      Мои акции
+                      <svg class="">
+                        <use xlink:href="img/sprite.svg#earn"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="tabs__nav-item content-block__more profile__btn">
+                    <button
+                      class="tabs__nav-btn content-block-more"
+                      type="button"
+                    >
+                      Редактировать профиль
+                      <svg class="icon-pencil">
+                        <use xlink:href="img/sprite.svg#pencil"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+                <div class="tabs__content profile__content">
+                  <div class="tabs__panel">
+                    <div class="profile__earns">
+                      <div class="content-block__more profile__btn-exit profile__earn">
+                        <a href="#" class="content-block-more">
+                          <span> Создать частный сбор </span>
+                        </a>
+                      </div>
+                      <div class="content-block__more profile__btn-exit profile__earn">
+                        <a href="#" class="content-block-more">
+                          <span> Создать корпоративный сбор </span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="profile__cards">
+                      <div class="stock" data-graph-path="on-moderation">
+                        <div class="stock__status">На модерации</div>
+                        <picture class="stock__img">
+                          <source srcset="img/avatar.webp" type="image/webp">
+                          <img loading="lazy" src="img/avatar.jpeg" alt="">
+                        </picture>
+                        <div class="stock__body">
+                          <div class="stock__avatars">
+                            <div class="stock__avatar">
+                              <img src="img/avatar_1.jpg" alt="">
+                            </div>
+                            <div class="stock__avatar">
+                              <img src="img/fund_logo.jpg" alt="">
+                            </div>
+                          </div>
+                          <span class="stock__authors">
+                            Илья Гладцын и Благотворительный фонд «Жизнь без границ»
+                          </span>
+                          <h3 class="stock__title">Человеку нужен человек</h3>
+                          <div class="stock__footer">
+                            <div class="stock__range"></div>
+                            <div class="stock__cost">
+                              <span class="stock__collected">Собрано: 14 400 ₽</span>
+                              <span class="stock__aim">Цель: 450 000 ₽</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="stock" data-graph-path="published">
+                        <div class="stock__status">Опубликована</div>
+                        <picture class="stock__img">
+                          <source srcset="img/stock.webp" type="image/webp">
+                          <img loading="lazy" src="img/stock.jpg" alt="">
+                        </picture>
+                        <div class="stock__body">
+                          <div class="stock__avatars">
+                            <div class="stock__avatar">
+                              <img src="img/avatar_1.jpg" alt="">
+                            </div>
+                            <div class="stock__avatar">
+                              <img src="img/fund_logo.jpg" alt="">
+                            </div>
+                          </div>
+                          <span class="stock__authors">
+                            Илья Гладцын и Благотворительный фонд «Жизнь без границ»
+                          </span>
+                          <h3 class="stock__title">Человеку нужен человек</h3>
+                          <div class="stock__footer">
+                            <div class="stock__range"></div>
+                            <div class="stock__cost">
+                              <span class="stock__collected">Собрано: 14 400 ₽</span>
+                              <span class="stock__aim">Цель: 450 000 ₽</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="stock stock__completed">
+                        <div class="stock__status">Завершена</div>
+                        <picture class="stock__img">
+                          <source srcset="img/stock.webp" type="image/webp">
+                          <img loading="lazy" src="img/stock.jpg" alt="">
+                        </picture>
+                        <div class="stock__body">
+                          <div class="stock__avatars">
+                            <div class="stock__avatar">
+                              <img src="img/avatar_1.jpg" alt="">
+                            </div>
+                            <div class="stock__avatar">
+                              <img src="img/fund_logo.jpg" alt="">
+                            </div>
+                          </div>
+                          <span class="stock__authors">
+                            Илья Гладцын и Благотворительный фонд «Жизнь без границ»
+                          </span>
+                          <h3 class="stock__title">Человеку нужен человек</h3>
+                          <div class="stock__footer">
+                            <div class="stock__range"></div>
+                            <div class="stock__cost">
+                              <span class="stock__collected">Собрано: 14 400 ₽</span>
+                              <span class="stock__aim">Цель: 450 000 ₽</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="stock">
+                        <div class="stock__status">Отклонена</div>
+                        <picture class="stock__img">
+                          <source srcset="img/stock.webp" type="image/webp">
+                          <img loading="lazy" src="img/stock.jpg" alt="">
+                        </picture>
+                        <div class="stock__body">
+                          <div class="stock__avatars">
+                            <div class="stock__avatar">
+                              <img src="img/avatar_1.jpg" alt="">
+                            </div>
+                            <div class="stock__avatar">
+                              <img src="img/fund_logo.jpg" alt="">
+                            </div>
+                          </div>
+                          <span class="stock__authors">
+                            Илья Гладцын и Благотворительный фонд «Жизнь без границ»
+                          </span>
+                          <h3 class="stock__title">Человеку нужен человек</h3>
+                          <div class="stock__footer">
+                            <div class="stock__range"></div>
+                            <div class="stock__cost">
+                              <span class="stock__collected">Собрано: 14 400 ₽</span>
+                              <span class="stock__aim">Цель: 450 000 ₽</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="tabs__panel">
+                    <div class="fieldset border-bottom">
+                      <h5>Добавьте информацию о себе</h5>
+                      <form action="" id="profile-edit-form" class="profile-password">
+                        <div class="info__item">
+                          <div class="input_box">
+                            <div class="info__subtitle">
+                              <span>Имя, фамилия</span>
+                            </div>
+                            <input
+                            type="text"
+                            name="name"
+                            value="omni.aa"
+                          />
+                          </div>
+                        </div>
+                        <div class="info__item">
+                            <div class="input_box">
+                              <div class="info__subtitle">
+                                <span>Почта</span>
+                              </div>
+                              <input
+                                type="email"
+                                name="email"
+                                value="omni.aa@yandex.ru"
+                              />
+                            </div>
+                        </div>
+                        <div class="info__item">
+                          <div class="info__subtitle">
+                            <p>
+                              <b> Аватар пользователя </b>
+                            </p>
+                          </div>
+                          <div class="info__cover_upload info__cover_upload_ava input-file-ava">
+                            <div class="upload__area js-upload-widget" data-size="5">
+                              <input type="hidden" name="actionItemAuthorImg" value="">
+                              <img class="upload__area_img" src="img/icons/upload.svg" alt="">
+                              <span class="upload__area_text">
+                                Перетащите фото в это поле или
+                                <span class="user-file color_green"> выберите файл </span>
+                                с вашего компьютера
+                              </span>
+                              <div class="inner-div js-upload-widget-button" style="
+                                  position: relative;
+                                  overflow: hidden;
+                                  direction: ltr;
+                                ">
+                                <input qq-button-id="bd28953d-b7d3-4521-b4a7-3454fdd7b847" title="Выберите файл" type="file" id="reg_file" accept=".png, .jpg, .jpeg" name="reg_file" style="
+                                    position: absolute;
+                                    right: 0px;
+                                    top: 0px;
+                                    font-family: Arial;
+                                    font-size: 118px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    cursor: pointer;
+                                    opacity: 0;
+                                    height: 100%;
+                                  ">
+                              </div>
+                              <div class="image-box image-preview js-upload-widget-preview" style="background-image: url('./img/avatar.jpeg')"></div>
+                            </div>
+                            <div class="upload__require-box">
+                              <div class="require-box__item">
+                                <p class="small_bold">
+                                  <span class="fw-normal">
+                                    Желательный размер не более
+                                    <br>
+                                  </span>
+                                  200×200 px, не более 1 Мб
+                                </p>
+                              </div>
+                              <div class="require-box__item">
+                                <p class="small_bold">
+                                  <span class="fw-normal">
+                                    Допустимые форматы
+                                    <br>
+                                    изображения:
+                                  </span>
+                                  JPG, GIF, PNG
+                                </p>
+                              </div>
+                              <div class="require-box__item">
+                                <p class="small_bold">
+                                  Важно!
+                                  <span class="fw-normal">
+                                    На фото не должно быть
+                                    <br>
+                                    надписей и водяных знаков
+                                  </span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-block__more profile-password__btn">
+                          <button type="submit" class="content-block-more">
+                            <span>Сохранить</span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="fielset" style="margin-top: 40px;">
+                      <h5>Изменить пароль</h5>
+                      <form action="" id="password-change-form" class="profile-password">
+                        <div class="info__item">
+                          <div class="info__item__input input_box">
+                            <input
+                              class="password-input"
+                              type="password"
+                              name="old_password"
+                              placeholder="Введите старый пароль"
+                              autocomplete="off"
+                              id="old_password"
+                            />
+                            <div class="password-eye"></div>
+                          </div>
+                        </div>
+                        <div class="info__item">
+                          <div class="info__item__input input_box">
+                            <input
+                              class="password-input"
+                              type="password"
+                              name="enter_password"
+                              placeholder="Введите новый пароль"
+                              autocomplete="off"
+                              id="enter_password"
+                            />
+                            <div class="password-eye"></div>
+                          </div>
+                        </div>
+                        <div class="info__item">
+                          <div class="info__item__input input_box">
+                            <input
+                              class="password-input"
+                              type="password"
+                              name="pass_repeat"
+                              placeholder="Введите новый пароль ещё раз"
+                              id="pass_repeat"
+                              autocomplete="off"
+                            />
+                            <div class="password-eye"></div>
+                          </div>
+                        </div>
+                        <div class="content-block__more profile-password__btn">
+                          <button type="submit" class="content-block-more">
+                            <span>Изменить</span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="graph-modal">
+      <div
+  class="graph-modal__container popup-moderate"
+  role="dialog"
+  aria-modal="true"
+  data-graph-target="on-moderation"
+>
+  <button
+    class="btn-reset js-modal-close graph-modal__close"
+    aria-label="Закрыть модальное окно"
+  ></button>
+  <div class="graph-modal__content">
+    <h3>
+      Ваша акция находится на <span>модерации</span>. <br />
+      Хотите внести изменения? <br />
+      Напишите нам:
+    </h3>
+    <form action="" id="moderate">
+      <div class="info__item">
+        <div class="input_box">
+          <input type="email" name="email" placeholder="Email" />
+        </div>
+      </div>
+      <div class="input_box input_box_textarea info__item">
+        <div class="info__item__input textarea_box">
+          <textarea
+            placeholder="Напишите здесь ваше обращение"
+            id="col_desc"
+            name="col_desc"
+            rows="6"
+          ></textarea>
+          <div class="textarea_resize"></div>
+          <div class="textarea_resize"></div>
+          <div class="textarea_resize"></div>
+        </div>
+      </div>
+      <div class="info__cover_upload input-file-cover">
+        <div class="upload__wrap">
+          <div
+            class="upload__area upload-file upload__area-small js-upload-widget"
+            data-extensions='["pdf","jpg","jpeg"]'
+            data-size="25"
+          >
+            <input
+              type="text"
+              name="user_dob_agreement"
+              value=""
+              class="hidden_txt"
+            />
+            <img
+              class="upload__area_img"
+              src="img/icons/upload.svg"
+              alt="upload_prezentation"
+            />
+            <span class="upload__area_text">
+              <div class="user-file">Загрузить файл</div>
+            </span>
+            <div
+              class="inner-div js-upload-widget-button"
+              style="position: relative; overflow: hidden; direction: ltr"
+            >
+              <input
+                qq-button-id="69ff2e07-46f1-4465-a5cf-1baddc2a33dc"
+                title="Выберите файл"
+                type="file"
+                name="file"
+                class="input-file-edit"
+                style="
+                  position: absolute;
+                  right: 0px;
+                  top: 0px;
+                  font-family: Arial;
+                  font-size: 118px;
+                  margin: 0px;
+                  padding: 0px;
+                  cursor: pointer;
+                  opacity: 0;
+                  height: 100%;
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="upload__require-box">
+          <div class="require-box__item">
+            <p class="small_bold">Загрузите файл, если это необходимо</p>
+          </div>
+          <div class="require-box__item">
+            <p class="small_bold">Размер файла не более 2 Мб.</p>
+          </div>
+        </div>
+      </div>
+      <div class="pp__check">
+        <div class="pp-check pp-check_c">
+          <div class="pp-check__checkbox">
+            <div class="check">
+              <input
+                class="styled-checkbox"
+                id="agree1"
+                value=""
+                name="enter_checkbox1"
+                type="checkbox"
+              />
+              <label for="agree1"></label>
+            </div>
+          </div>
+          <div class="pp-check__text">
+            <span>
+              <label for="agree1">
+                Согласен на обработку персональных данных
+              </label>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="content-block__more content-block__more_darkred">
+        <button
+          type="submit"
+          class="content-block-more next-step-proj"
+          data-next="end"
+        >
+          <span>Отправить</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+      <div
+  class="graph-modal__container popup-published"
+  role="dialog"
+  aria-modal="true"
+  data-graph-target="published"
+>
+  <button
+    class="btn-reset js-modal-close graph-modal__close"
+    aria-label="Закрыть модальное окно"
+  ></button>
+  <div class="graph-modal__content">
+    <h3 class="popup-published__title">Ваша акция опубликована.</h3>
+    <div class="content-block__more content-block__more_darkred popup-published__link">
+      <a href="#"
+        type="submit"
+        class="content-block-more next-step-proj"
+        data-next="end"
+
+      >
+        <span>Посмотреть акцию</span>
+      </a>
+    </div>
+    <h3>
+      Хотите внести изменения? <br />
+      Напишите нам:
+    </h3>
+    <form action="" id="published">
+      <div class="info__item">
+        <div class="input_box">
+          <input type="email" name="pub_email" placeholder="Email" />
+        </div>
+      </div>
+      <div class="input_box input_box_textarea info__item">
+        <div class="info__item__input textarea_box">
+          <textarea
+            placeholder="Напишите здесь ваше обращение"
+            id="pub_desc"
+            name="pub_desc"
+            rows="6"
+          ></textarea>
+          <div class="textarea_resize"></div>
+          <div class="textarea_resize"></div>
+          <div class="textarea_resize"></div>
+        </div>
+      </div>
+      <div class="info__subtitle">
+        <p class="field-req">
+          <b> Обложка сбора </b>
+        </p>
+      </div>
+
+      <div class="info__cover_upload input-file-cover">
+        <div class="upload__wrap">
+          <div
+            class="upload__area upload-file upload__area-small js-upload-widget"
+            data-extensions='["pdf","jpg","jpeg"]'
+            data-size="25"
+          >
+            <input
+              type="text"
+              name="user_dob_agreement"
+              value=""
+              class="hidden_txt"
+            />
+            <img
+              class="upload__area_img"
+              src="img/icons/upload.svg"
+              alt="upload_prezentation"
+            />
+            <span class="upload__area_text">
+              <div class="user-file">Загрузить файл</div>
+            </span>
+            <div
+              class="inner-div js-upload-widget-button"
+              style="position: relative; overflow: hidden; direction: ltr"
+            >
+              <input
+                qq-button-id="69ff2e07-46f1-4465-a5cf-1baddc2a33dc"
+                title="Выберите файл"
+                type="file"
+                name="file"
+                class="input-file-edit"
+                style="
+                  position: absolute;
+                  right: 0px;
+                  top: 0px;
+                  font-family: Arial;
+                  font-size: 118px;
+                  margin: 0px;
+                  padding: 0px;
+                  cursor: pointer;
+                  opacity: 0;
+                  height: 100%;
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="upload__require-box">
+          <div class="require-box__item">
+            <p class="small_bold">
+              Изображение должно быть горизонтальной <br />
+              ориентации, формата JPG, JPEG, PNG.
+            </p>
+          </div>
+          <div class="require-box__item">
+            <p class="small_bold">Размер файла не более 2 Мб.</p>
+          </div>
+        </div>
+      </div>
+      <div class="pp__check">
+        <div class="pp-check pp-check_c">
+          <div class="pp-check__checkbox">
+            <div class="check">
+              <input
+                class="styled-checkbox"
+                id="pub_checkbox1"
+                value=""
+                name="pub_checkbox1"
+                type="checkbox"
+              />
+              <label for="pub_checkbox1"></label>
+            </div>
+          </div>
+          <div class="pp-check__text">
+            <span>
+              <label for="pub_checkbox1">
+                Согласен на обработку персональных данных
+              </label>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="content-block__more content-block__more_darkred">
+        <button
+          type="submit"
+          class="content-block-more next-step-proj"
+          data-next="end"
+
+        >
+          <span>Отправить</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+      <div class="graph-modal__container popup-success" role="dialog" aria-modal="true" data-graph-target="success">
+  <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+  <div class="graph-modal__content">
+    <div class="coll-success">
+      <h2>
+        Успешно
+        <svg class="">
+          <use xlink:href="img/sprite.svg#success"></use>
+        </svg>
+      </h2>
+      <span>Ваше обращение обрабатывается модератором</span>
+    </div>
+  </div>
+</div>
+
+      <div class="graph-modal__container cropp cropp-ava" role="dialog" aria-modal="true" data-graph-target="cropp-ava">
+        <div class="graph-modal__content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModal">Выберите миниатюру</h5>
+          </div>
+          <div class="modal-body modal-body1 border-bottom">
+            <div id="croppieContainer"></div>
+          </div>
+          <div class="modal-footer">
+            <div class="content-block__more">
+              <button class="content-block-more btn btn-secondary crop-destroy js-modal-close" data-dismiss="modal">
+                <span>Отменить</span>
+              </button>
+            </div>
+            <div class="content-block__more">
+              <button type="button" id="cropBtn" class="content-block-more btn btn-primary save-modal js-modal-close">
+                <span>Сохранить</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

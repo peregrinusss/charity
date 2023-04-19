@@ -26,122 +26,22 @@
             </div>
           </div>
           <div class="pp__content pp__content_questionnaire">
-            <h4 class="coll__title">Анкета для создания корпоративного сбора</h4>
+            <div class="coll-moderate">
+              <div class="coll-moderate__item">
+                Модерация от <span>31.01.2022</span>: Поменяйте логотип
+              </div>
+              <div class="coll-moderate__item">
+                Модерация от <span>28.01.2022</span>: Email не актуальный
+              </div>
+            </div>
+            <h4 class="coll__title">Анкета для создания частного сбора</h4>
             <form
               method=""
-              id="corporate"
+              id="collecting"
               class="pp-content__form js-city-action-add"
               enctype="multipart/form-data"
               novalidate="novalidate"
             >
-              <div class="fieldset">
-                <h5>Информация о компании</h5>
-                <div class="info__item">
-                  <div class="input_box">
-                    <div class="info__subtitle">
-                      <span class="field-req">Название организации</span>
-                    </div>
-                    <input
-                    type="text"
-                    name="corp_org_name"
-                  />
-                  </div>
-                </div>
-
-                <div class="info__item border-bottom-bold">
-                  <div class="info__subtitle">
-                    <p>
-                      <b> Логотип организации </b>
-                    </p>
-                  </div>
-                  <div class="upload__ava"></div>
-                  <div class="info__cover_upload info__cover_upload_ava input-file-ava">
-                    <div class="upload__area js-upload-widget" data-size="5">
-                      <input type="hidden" name="actionItemAuthorImg" value="">
-                      <img class="upload__area_img" src="img/icons/upload.svg" alt="">
-                      <span class="upload__area_text">
-                        Перетащите фото в это поле или
-                        <span class="user-file color_green"> выберите файл </span>
-                        с вашего компьютера
-                      </span>
-                      <div class="inner-div js-upload-widget-button" style="
-                          position: relative;
-                          overflow: hidden;
-                          direction: ltr;
-                        ">
-                        <input qq-button-id="bd28953d-b7d3-4521-b4a7-3454fdd7b847" title="Выберите файл" type="file" id="reg_file" accept=".png, .jpg, .jpeg" name="reg_file" style="
-                            position: absolute;
-                            right: 0px;
-                            top: 0px;
-                            font-family: Arial;
-                            font-size: 118px;
-                            margin: 0px;
-                            padding: 0px;
-                            cursor: pointer;
-                            opacity: 0;
-                            height: 100%;
-                          ">
-                      </div>
-                      <div class="image-box image-preview js-upload-widget-preview" style="background-image: url()"></div>
-                    </div>
-                    <div class="upload__require-box">
-                      <div class="require-box__item">
-                        <p class="small_bold">
-                          Не более 1 Мб
-                        </p>
-                      </div>
-                      <div class="require-box__item">
-                        <p class="small_bold">
-                          Допустимые форматы изображения: JPG, GIF, PNG
-                        </p>
-                      </div>
-                      <div class="require-box__item">
-                        <p class="small_bold">
-                          Важно! На фото не должно быть надписей и водяных знаков
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="fieldset">
-                <h5>Контакнтное лицо от организации</h5>
-                <div class="info__item">
-                  <div class="input_box">
-                    <div class="info__subtitle">
-                      <span class="field-req">ФИО</span>
-                    </div>
-                    <input
-                    type="text"
-                    name="corp_name"
-                  />
-                  </div>
-                </div>
-                <div class="info__item">
-                  <div class="input_box">
-                    <div class="info__subtitle">
-                      <span class="field-req">Почта</span>
-                    </div>
-                    <input
-                    type="email"
-                    name="corp_email"
-                  />
-                  </div>
-                </div>
-                <div class="info__item border-bottom-bold">
-                  <div class="input_box">
-                    <div class="info__subtitle">
-                      <span class="field-req">Контактный телефон</span>
-                    </div>
-                    <input
-                    type="tel"
-                    name="corp_tel"
-                    id="corp_tel"
-                  />
-                  </div>
-                </div>
-              </div>
 
               <div class="fieldset">
                 <h5>Информация о сборе</h5>
@@ -879,31 +779,6 @@
                       <div class="check">
                         <input
                           class="styled-checkbox"
-                          id="agree"
-                          value=""
-                          name="enter_checkbox"
-                          type="checkbox"
-                        />
-                        <label for="agree"></label>
-                      </div>
-                    </div>
-                    <div class="pp-check__text">
-                      <span>
-                        <label for="agree">
-                          Я подтверждаю, что персональные данные третьих лиц размещены с их согласия
-                        </label
-                        >
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="pp__check">
-                  <div class="pp-check pp-check_c">
-                    <div class="pp-check__checkbox">
-                      <div class="check">
-                        <input
-                          class="styled-checkbox"
                           id="agree1"
                           value=""
                           name="enter_checkbox1"
@@ -1015,28 +890,6 @@
         </div>
       </div>
       <div class="graph-modal__container cropp-gallery" role="dialog" aria-modal="true" data-graph-target="cropp-gallery">
-        <div class="graph-modal__content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="imageModal">Выберите миниатюру</h5>
-          </div>
-          <div class="modal-body modal-body1 border-bottom">
-            <div id="croppieContainer"></div>
-          </div>
-          <div class="modal-footer">
-            <div class="content-block__more">
-              <button class="content-block-more btn btn-secondary crop-destroy js-modal-close" data-dismiss="modal">
-                <span>Отменить</span>
-              </button>
-            </div>
-            <div class="content-block__more">
-              <button type="button" id="cropBtn" class="content-block-more btn btn-primary save-modal js-modal-close">
-                <span>Сохранить</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="graph-modal__container cropp-ava" role="dialog" aria-modal="true" data-graph-target="cropp-ava">
         <div class="graph-modal__content">
           <div class="modal-header">
             <h5 class="modal-title" id="imageModal">Выберите миниатюру</h5>
