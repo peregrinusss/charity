@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Добрые дела</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <main class="main">
+        <div class="container container-main">
+          <div class="info__item border-bottom">
+            <div class="content-block__more profile__btn-back profile__btn-exit">
+              <a href="#" type="submit" class="content-block-more">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#arrow-left"></use>
+                </svg>
+                <span>Назад</span>
+              </a>
+            </div>
+          </div>
+          <div class="pp__content pp__content_questionnaire">
+            <h4 class="coll__title">Анкета акции</h4>
+            <div class="vol_anketa_fields">
+              <div class="vol_anketa_fields_item">
+                <div class="vol_anketa_fields_item_title">
+                  Название поля из анкеты
+                </div>
+                <div contenteditable="true" class="vol_anketa_fields_item_value">анкете</div>
+              </div>
+              <div class="vol_anketa_fields_item">
+                <div class="vol_anketa_fields_item_title">
+                  Название поля из анкеты
+                </div>
+                <div contenteditable="true" class="vol_anketa_fields_item_value">То, что пользователь написал в анкете</div>
+              </div>
+              <div class="vol_anketa_fields_item">
+                <div class="vol_anketa_fields_item_title">
+                  Название поля из анкеты
+                </div>
+                <div contenteditable="true" class="vol_anketa_fields_item_value">То, что пользователь написал в анкете</div>
+              </div>
+              <div class="vol_anketa_fields_item">
+                <div class="vol_anketa_fields_item_title">
+                  Название поля из анкеты
+                </div>
+                <div contenteditable="true" class="vol_anketa_fields_item_value">Да</div>
+              </div>
+              <div class="vol_anketa_fields_item">
+                <div class="vol_anketa_fields_item_title">
+                  Название поля из анкеты
+                </div>
+                <div contenteditable="true" class="vol_anketa_fields_item_value">То, что пользователь написал в анкете</div>
+              </div>
+              <div class="vol_anketa_fields_item">
+                <div class="vol_anketa_fields_item_title">
+                  Название поля из анкеты
+                </div>
+                <div contenteditable="true" class="vol_anketa_fields_item_value">20.04.2022</div>
+              </div>
+              <div class="vol_anketa_fields_item">
+                <div class="vol_anketa_fields_item_title">
+                  Название поля из анкеты
+                </div>
+                <div contenteditable="true" class="vol_anketa_fields_item_value">То, что пользователь написал в анкете</div>
+              </div>
+            </div>
+          </div>
+          <div class="manage__btns">
+            <div class="content-block__more">
+              <button type="submit" class="content-block-more">
+                <span>Опубликовать акцию</span>
+              </button>
+            </div>
+            <div class="content-block__more">
+              <button type="submit" class="content-block-more" data-graph-path="cancel-com">
+                <span>Запретить публикацию акции</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="graph-modal">
+      <div class="graph-modal__container popup-cancel" role="dialog" aria-modal="true" data-graph-target="cancel-com">
+        <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content">
+          <h3>
+            Комментарий к запрету публикации акции
+          </h3>
+          <form>
+            <div class="input_box input_box_textarea info__item">
+              <div class="info__item__input textarea_box">
+                <textarea
+                  placeholder="Напишите здесь комментарий к запрету публикации акции. Комментарий увидит пользователь"
+                  id="col_desc"
+                  name="col_desc"
+                  rows="6"
+                ></textarea>
+                <div class="textarea_resize"></div>
+                <div class="textarea_resize"></div>
+                <div class="textarea_resize"></div>
+              </div>
+            </div>
+            <div class="content-block__more content-block__more_darkred">
+              <button
+                type="submit"
+                class="content-block-more next-step-proj"
+                data-next="end"
+              >
+                <span>Отправить</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
