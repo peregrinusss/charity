@@ -3268,20 +3268,6 @@ __webpack_require__.r(__webpack_exports__);
   \*********************************/
 /***/ (() => {
 
-const reasonBox = document.querySelector('.reasons-box');
-if (reasonBox) {
-  const colReasons = document.querySelectorAll('.categories-box__item');
-  colReasons.forEach(colReason => {
-    const reasonNew = document.querySelector('#reason-new');
-    colReason.addEventListener('click', () => {
-      if (reasonNew.checked) {
-        $('.js-reason-spoiler').slideDown(200);
-      } else {
-        $('.js-reason-spoiler').slideUp(200);
-      }
-    });
-  });
-}
 const passwordInputBtns = document.querySelectorAll('.password-eye');
 if (passwordInputBtns) {
   passwordInputBtns.forEach(el => {

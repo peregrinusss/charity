@@ -103,14 +103,16 @@ table.dataTable {
   margin-bottom: -55px;
 }
 .admin-filter__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 190px 250px;
+  grid-template-columns: 190px 250px;
   gap: 10px;
 }
 .admin-filter__item span {
   font-weight: 600;
   font-size: 16px;
+  text-align: end;
 }
 .admin-filter__item select {
   border: 1px solid #3344E5 !important;
