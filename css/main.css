@@ -965,14 +965,12 @@ a.link-darkred {
 
 .input_box .ck.ck-editor__main > .ck-editor__editable {
   min-height: 215px;
-  background-color: #f7f7f7;
   border: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   padding: 0 24px;
   font-size: 16px;
   line-height: 23px;
-  caret-color: rgb(22, 19, 16);
 }
 
 .input_box .ck.ck-editor__main > .ck-editor__editable p {
@@ -2297,8 +2295,8 @@ input:focus {
   margin-right: 12px;
   display: inline-block;
   vertical-align: middle;
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   background: #e4e4e4;
   border-radius: 50%;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -2583,14 +2581,6 @@ label {
 
 .container_whiteback .checkbox__text:before {
   background-color: #f7f7f7;
-}
-
-.container_whiteback .input_box:hover input, .container_whiteback .textarea_box:hover textarea {
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-box-shadow: inset 0 0 0 2px #dddddd;
-  box-shadow: inset 0 0 0 2px #dddddd;
 }
 
 .pre_button_warn {
@@ -4111,18 +4101,33 @@ input:focus, textarea:focus {
 .coll-success__title {
   font-size: 50px;
   color: #3344E5;
+  white-space: nowrap;
+  display: flex;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
 }
 .coll-success__title svg {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin-left: 20px;
   fill: none;
   stroke: #3344E5;
   stroke-width: 40px;
-  margin-bottom: -10px;
+  margin-top: -10px;
 }
 .coll-success span {
   font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .coll-success__title {
+    font-size: 42px;
+  }
+  .coll-success__title svg {
+    margin-top: -18px;
+    margin-left: 10px;
+  }
 }
 
 .coll__user {
@@ -4168,6 +4173,7 @@ input:focus, textarea:focus {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
+  margin: 0 -20px;
   grid-template-columns: 1fr;
   gap: 5px;
   margin-bottom: 40px;
@@ -4221,6 +4227,11 @@ input:focus, textarea:focus {
   .upload__area {
     width: 200px !important;
     height: 200px;
+  }
+  .coll-moderate {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px;
   }
 }
 .upload__area_text {
@@ -5399,8 +5410,11 @@ input.error, textarea.error {
 
 .styled-checkbox:checked ~ label:after {
   background: url("../img/icons/checked.svg") no-repeat center bottom;
-  left: 0;
-  top: 0;
+  left: 1px;
+  top: 3px;
+  background-size: 20px;
+  width: 20px;
+  height: 15px;
 }
 
 .profile-form-item__field input {
@@ -5615,4 +5629,86 @@ input.input-range-dis:focus {
     margin-top: 20px;
   }
 }
-/*# sourceMappingURL=main.css.map */
+
+
+.stock__status-moderate {
+  background: rgb(16, 63, 227, 0.9);
+  color: #ffffff;
+}
+
+.stock__status-uploaded {
+  background: rgb(27, 151, 11, 0.9);
+  color: #fff;
+}
+
+.stock__status-end {
+  background: rgb(150, 244, 0, 0.9);
+  color: #000000;
+}
+
+.stock__status-closed {
+  background: rgb(244, 40, 60, 0.9);
+  color: #ffffff;
+}
+
+.stock__status-canceled {
+  background: rgb(167, 18, 18, 0.9);
+  color: #a71212;
+  color: #ffffff;
+}
+
+.stock:hover {
+  text-decoration: none;
+}
+
+.stock__completed .stock__wrap {
+  position: relative;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.stock__status {
+  z-index: 2;
+}
+
+.input-date__wrap.unavailable {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.input-date__checkbox {
+  margin-top: 25px;
+}
+
+.manage__btn-publish {
+  background: #96F400 !important;
+}
+
+.manage__btn-publish span {
+  color: #000000 !important;
+  font-weight: 400 !important;
+}
+
+.manage__btn-cancel span {
+  font-weight: 400 !important;
+}
+
+.manage__btn-cancel {
+  background: #F4283C !important;
+}
+
+.admin-search {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 30px !important;
+}
+
+.admin-search button img {
+  width: 21px;
+}
+
+.admin-search button {
+  cursor: pointer;
+  z-index: 1;
+  pointer-events: all;
+}

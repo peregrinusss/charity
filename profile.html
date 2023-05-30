@@ -6,8 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>Добрые дела</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/jquery.min.js"></script>
+  <script defer src="js/bootstrap.min.js"></script>
+  <script defer src="js/jq-inputmask.min.js"></script>
+  <script defer src="js/jq-validate.min.js"></script>
+  <script defer src="js/bootstrap-datepicker.min.js"></script>
+  <script defer src="js/datatables.js"></script>
+  <script defer src="js/autosize.min.js"></script>
+  <script defer src="js/croppie.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
@@ -74,113 +83,151 @@
                     </div>
                     <div class="profile__cards">
                       <div class="stock" data-graph-path="on-moderation">
-                        <div class="stock__status">На модерации</div>
-                        <picture class="stock__img">
-                          <source srcset="img/avatar.webp" type="image/webp">
-                          <img loading="lazy" src="img/avatar.jpeg" alt="">
-                        </picture>
-                        <div class="stock__body">
-                          <div class="stock__avatars">
-                            <div class="stock__avatar">
-                              <img src="img/avatar_1.jpg" alt="">
+                        <div class="stock__status stock__status-moderate">На модерации</div>
+                        <div class="stock__wrap">
+                          <picture class="stock__img">
+                            <source srcset="img/avatar.webp" type="image/webp">
+                            <img loading="lazy" src="img/avatar.jpeg" alt="">
+                          </picture>
+                          <div class="stock__body">
+                            <div class="stock__avatars">
+                              <div class="stock__avatar">
+                                <img src="img/avatar_1.jpg" alt="">
+                              </div>
+                              <div class="stock__avatar">
+                                <img src="img/fund_logo.jpg" alt="">
+                              </div>
                             </div>
-                            <div class="stock__avatar">
-                              <img src="img/fund_logo.jpg" alt="">
-                            </div>
-                          </div>
-                          <span class="stock__authors">
-                            Илья Гладцын и Благотворительный фонд «Жизнь без границ»
-                          </span>
-                          <h3 class="stock__title">Человеку нужен человек</h3>
-                          <div class="stock__footer">
-                            <div class="stock__range"></div>
-                            <div class="stock__cost">
-                              <span class="stock__collected">Собрано: 14 400 ₽</span>
-                              <span class="stock__aim">Цель: 450 000 ₽</span>
+                            <span class="stock__authors">
+                              Илья Гладцын и Благотворительный фонд «Жизнь без границ»
+                            </span>
+                            <h3 class="stock__title">Человеку нужен человек</h3>
+                            <div class="stock__footer">
+                              <div class="stock__range"></div>
+                              <div class="stock__cost">
+                                <span class="stock__collected">Собрано: 14 400 ₽</span>
+                                <span class="stock__aim">Цель: 450 000 ₽</span>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div class="stock" data-graph-path="published">
-                        <div class="stock__status">Опубликована</div>
-                        <picture class="stock__img">
-                          <source srcset="img/stock.webp" type="image/webp">
-                          <img loading="lazy" src="img/stock.jpg" alt="">
-                        </picture>
-                        <div class="stock__body">
-                          <div class="stock__avatars">
-                            <div class="stock__avatar">
-                              <img src="img/avatar_1.jpg" alt="">
+                        <div class="stock__status stock__status-uploaded">Опубликована</div>
+                        <div class="stock__wrap">
+                          <picture class="stock__img">
+                            <source srcset="img/stock.webp" type="image/webp">
+                            <img loading="lazy" src="img/stock.jpg" alt="">
+                          </picture>
+                          <div class="stock__body">
+                            <div class="stock__avatars">
+                              <div class="stock__avatar">
+                                <img src="img/avatar_1.jpg" alt="">
+                              </div>
+                              <div class="stock__avatar">
+                                <img src="img/fund_logo.jpg" alt="">
+                              </div>
                             </div>
-                            <div class="stock__avatar">
-                              <img src="img/fund_logo.jpg" alt="">
-                            </div>
-                          </div>
-                          <span class="stock__authors">
-                            Илья Гладцын и Благотворительный фонд «Жизнь без границ»
-                          </span>
-                          <h3 class="stock__title">Человеку нужен человек</h3>
-                          <div class="stock__footer">
-                            <div class="stock__range"></div>
-                            <div class="stock__cost">
-                              <span class="stock__collected">Собрано: 14 400 ₽</span>
-                              <span class="stock__aim">Цель: 450 000 ₽</span>
+                            <span class="stock__authors">
+                              Илья Гладцын и Благотворительный фонд «Жизнь без границ»
+                            </span>
+                            <h3 class="stock__title">Человеку нужен человек</h3>
+                            <div class="stock__footer">
+                              <div class="stock__range"></div>
+                              <div class="stock__cost">
+                                <span class="stock__collected">Собрано: 14 400 ₽</span>
+                                <span class="stock__aim">Цель: 450 000 ₽</span>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div class="stock stock__completed">
-                        <div class="stock__status">Завершена</div>
-                        <picture class="stock__img">
-                          <source srcset="img/stock.webp" type="image/webp">
-                          <img loading="lazy" src="img/stock.jpg" alt="">
-                        </picture>
-                        <div class="stock__body">
-                          <div class="stock__avatars">
-                            <div class="stock__avatar">
-                              <img src="img/avatar_1.jpg" alt="">
+                        <div class="stock__status stock__status-end">Средства собраны</div>
+                        <div class="stock__wrap">
+                          <picture class="stock__img">
+                            <source srcset="img/stock.webp" type="image/webp">
+                            <img loading="lazy" src="img/stock.jpg" alt="">
+                          </picture>
+                          <div class="stock__body">
+                            <div class="stock__avatars">
+                              <div class="stock__avatar">
+                                <img src="img/avatar_1.jpg" alt="">
+                              </div>
+                              <div class="stock__avatar">
+                                <img src="img/fund_logo.jpg" alt="">
+                              </div>
                             </div>
-                            <div class="stock__avatar">
-                              <img src="img/fund_logo.jpg" alt="">
+                            <span class="stock__authors">
+                              Илья Гладцын и Благотворительный фонд «Жизнь без границ»
+                            </span>
+                            <h3 class="stock__title">Человеку нужен человек</h3>
+                            <div class="stock__footer">
+                              <div class="stock__range"></div>
+                              <div class="stock__cost">
+                                <span class="stock__collected">Собрано: 14 400 ₽</span>
+                                <span class="stock__aim">Цель: 450 000 ₽</span>
+                              </div>
                             </div>
                           </div>
-                          <span class="stock__authors">
-                            Илья Гладцын и Благотворительный фонд «Жизнь без границ»
-                          </span>
-                          <h3 class="stock__title">Человеку нужен человек</h3>
-                          <div class="stock__footer">
-                            <div class="stock__range"></div>
-                            <div class="stock__cost">
-                              <span class="stock__collected">Собрано: 14 400 ₽</span>
-                              <span class="stock__aim">Цель: 450 000 ₽</span>
+                        </div>
+                      </div>
+                      <div class="stock stock__completed">
+                        <div class="stock__status stock__status-closed">Сбор закрыт</div>
+                        <div class="stock__wrap">
+                          <picture class="stock__img">
+                            <source srcset="img/stock.webp" type="image/webp">
+                            <img loading="lazy" src="img/stock.jpg" alt="">
+                          </picture>
+                          <div class="stock__body">
+                            <div class="stock__avatars">
+                              <div class="stock__avatar">
+                                <img src="img/avatar_1.jpg" alt="">
+                              </div>
+                              <div class="stock__avatar">
+                                <img src="img/fund_logo.jpg" alt="">
+                              </div>
+                            </div>
+                            <span class="stock__authors">
+                              Илья Гладцын и Благотворительный фонд «Жизнь без границ»
+                            </span>
+                            <h3 class="stock__title">Человеку нужен человек</h3>
+                            <div class="stock__footer">
+                              <div class="stock__range"></div>
+                              <div class="stock__cost">
+                                <span class="stock__collected">Собрано: 14 400 ₽</span>
+                                <span class="stock__aim">Цель: 450 000 ₽</span>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                       <a href="#" class="stock">
-                        <div class="stock__status">Отклонена</div>
-                        <picture class="stock__img">
-                          <source srcset="img/stock.webp" type="image/webp">
-                          <img loading="lazy" src="img/stock.jpg" alt="">
-                        </picture>
-                        <div class="stock__body">
-                          <div class="stock__avatars">
-                            <div class="stock__avatar">
-                              <img src="img/avatar_1.jpg" alt="">
+                        <div class="stock__status stock__status-canceled">Отклонена</div>
+                        <div class="stock__wrap">
+                          <picture class="stock__img">
+                            <source srcset="img/stock.webp" type="image/webp">
+                            <img loading="lazy" src="img/stock.jpg" alt="">
+                          </picture>
+                          <div class="stock__body">
+                            <div class="stock__avatars">
+                              <div class="stock__avatar">
+                                <img src="img/avatar_1.jpg" alt="">
+                              </div>
+                              <div class="stock__avatar">
+                                <img src="img/fund_logo.jpg" alt="">
+                              </div>
                             </div>
-                            <div class="stock__avatar">
-                              <img src="img/fund_logo.jpg" alt="">
-                            </div>
-                          </div>
-                          <span class="stock__authors">
-                            Илья Гладцын и Благотворительный фонд «Жизнь без границ»
-                          </span>
-                          <h3 class="stock__title">Человеку нужен человек</h3>
-                          <div class="stock__footer">
-                            <div class="stock__range"></div>
-                            <div class="stock__cost">
-                              <span class="stock__collected">Собрано: 14 400 ₽</span>
-                              <span class="stock__aim">Цель: 450 000 ₽</span>
+                            <span class="stock__authors">
+                              Илья Гладцын и&nbsp;Благотворительный фонд «Жизнь без границ»
+                            </span>
+                            <h3 class="stock__title">Человеку нужен человек</h3>
+                            <div class="stock__footer">
+                              <div class="stock__range"></div>
+                              <div class="stock__cost">
+                                <span class="stock__collected">Собрано: 14 400 ₽</span>
+                                <span class="stock__aim">Цель: 450 000 ₽</span>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -257,7 +304,7 @@
                                     Желательный размер не более
                                     <br>
                                   </span>
-                                  200×200 px, не более 1 Мб
+                                  200×200 px, не более 2 Мб
                                 </p>
                               </div>
                               <div class="require-box__item">
@@ -456,7 +503,7 @@
           <div class="pp-check__text">
             <span>
               <label for="agree1">
-                Согласен на обработку персональных данных
+                Согласен на <a href="#">обработку персональных данных</a>
               </label>
             </span>
           </div>
@@ -599,7 +646,7 @@
           <div class="pp-check__text">
             <span>
               <label for="pub_checkbox1">
-                Согласен на обработку персональных данных
+                Согласен на <a href="#">обработку персональных данных</a>
               </label>
             </span>
           </div>

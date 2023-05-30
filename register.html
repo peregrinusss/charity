@@ -6,8 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>Добрые дела</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/jquery.min.js"></script>
+  <script defer src="js/bootstrap.min.js"></script>
+  <script defer src="js/jq-inputmask.min.js"></script>
+  <script defer src="js/jq-validate.min.js"></script>
+  <script defer src="js/bootstrap-datepicker.min.js"></script>
+  <script defer src="js/datatables.js"></script>
+  <script defer src="js/autosize.min.js"></script>
+  <script defer src="js/croppie.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
@@ -64,7 +73,7 @@
                       </p>
                     </div>
                     <div class="input_box">
-                      <input type="text" name="reg_name" id="reg_name" placeholder="Имя, фамилия" value="">
+                      <input type="text" name="reg_name" id="reg_name" placeholder="Имя Фамилия Отчество" value="">
                     </div>
                   </div>
 
@@ -89,7 +98,7 @@
                             overflow: hidden;
                             direction: ltr;
                           ">
-                          <input qq-button-id="bd28953d-b7d3-4521-b4a7-3454fdd7b847" title="Выберите файл" type="file" id="reg_file" accept=".png, .jpg, .jpeg" name="reg_file" style="
+                          <input qq-button-id="bd28953d-b7d3-4521-b4a7-3454fdd7b847" title="Выберите файл" type="file" id="reg_file" accept=".png, .jpg, .jpeg, .gif" name="reg_file" style="
                               position: absolute;
                               right: 0px;
                               top: 0px;
@@ -111,7 +120,7 @@
                               Желательный размер не более
                               <br>
                             </span>
-                            200×200 px, не более 1 Мб
+                            200×200 px, не более 2 Мб
                           </p>
                         </div>
                         <div class="require-box__item">

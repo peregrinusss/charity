@@ -23,7 +23,7 @@
   <body class="page__body">
     <div class="site-container">
       <main class="main">
-        <div class="container">
+        <div class="container container-main">
           <div class="info__item border-bottom">
             <div class="content-block__more profile__btn-back profile__btn-exit">
               <a href="#" type="submit" class="content-block-more">
@@ -35,22 +35,122 @@
             </div>
           </div>
           <div class="pp__content pp__content_questionnaire">
-            <div class="coll-moderate">
-              <div class="coll-moderate__item">
-                Модерация от <span>31.01.2022</span>: Поменяйте логотип
-              </div>
-              <div class="coll-moderate__item">
-                Модерация от <span>28.01.2022</span>: Email не актуальный
-              </div>
-            </div>
-            <h4 class="coll__title">Анкета для создания частного сбора</h4>
+            <h4 class="coll__title">Анкета корпо&shy;ративного сбора</h4>
             <form
               method=""
-              id="collecting"
+              id="corporate"
               class="pp-content__form js-city-action-add"
               enctype="multipart/form-data"
               novalidate="novalidate"
             >
+              <div class="fieldset">
+                <h5>Информация о компании</h5>
+                <div class="info__item">
+                  <div class="input_box">
+                    <div class="info__subtitle">
+                      <span class="field-req">Название организации</span>
+                    </div>
+                    <input
+                    type="text"
+                    name="corp_org_name"
+                  />
+                  </div>
+                </div>
+
+                <div class="info__item border-bottom-bold">
+                  <div class="info__subtitle">
+                    <p>
+                      <b> Логотип организации </b>
+                    </p>
+                  </div>
+                  <div class="upload__ava"></div>
+                  <div class="info__cover_upload info__cover_upload_ava input-file-ava">
+                    <div class="upload__area js-upload-widget" data-size="5">
+                      <input type="hidden" name="actionItemAuthorImg" value="">
+                      <img class="upload__area_img" src="img/icons/upload.svg" alt="">
+                      <span class="upload__area_text">
+                        Перетащите фото в это поле или
+                        <span class="user-file color_green"> выберите файл </span>
+                        с вашего компьютера
+                      </span>
+                      <div class="inner-div js-upload-widget-button" style="
+                          position: relative;
+                          overflow: hidden;
+                          direction: ltr;
+                        ">
+                        <input qq-button-id="bd28953d-b7d3-4521-b4a7-3454fdd7b847" title="Выберите файл" type="file" id="reg_file" accept=".png, .jpg, .jpeg" name="reg_file" style="
+                            position: absolute;
+                            right: 0px;
+                            top: 0px;
+                            font-family: Arial;
+                            font-size: 118px;
+                            margin: 0px;
+                            padding: 0px;
+                            cursor: pointer;
+                            opacity: 0;
+                            height: 100%;
+                          ">
+                      </div>
+                      <div class="image-box image-preview js-upload-widget-preview" style="background-image: url()"></div>
+                    </div>
+                    <div class="upload__require-box">
+                      <div class="require-box__item">
+                        <p class="small_bold">
+                          Не более 2 Мб
+                        </p>
+                      </div>
+                      <div class="require-box__item">
+                        <p class="small_bold">
+                          Допустимые форматы изображения: JPG, GIF, PNG
+                        </p>
+                      </div>
+                      <div class="require-box__item">
+                        <p class="small_bold">
+                          Важно! На фото не должно быть надписей и водяных знаков
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fieldset">
+                <h5>Контакнтное лицо от организации</h5>
+                <div class="info__item">
+                  <div class="input_box">
+                    <div class="info__subtitle">
+                      <span class="field-req">ФИО</span>
+                    </div>
+                    <input
+                    type="text"
+                    name="corp_name"
+                  />
+                  </div>
+                </div>
+                <div class="info__item">
+                  <div class="input_box">
+                    <div class="info__subtitle">
+                      <span class="field-req">Почта</span>
+                    </div>
+                    <input
+                    type="email"
+                    name="corp_email"
+                  />
+                  </div>
+                </div>
+                <div class="info__item border-bottom-bold">
+                  <div class="input_box">
+                    <div class="info__subtitle">
+                      <span class="field-req">Контактный телефон</span>
+                    </div>
+                    <input
+                    type="tel"
+                    name="corp_tel"
+                    id="corp_tel"
+                  />
+                  </div>
+                </div>
+              </div>
 
               <div class="fieldset">
                 <h5>Информация о сборе</h5>
@@ -686,144 +786,54 @@
                   </div>
                 </div>
               </div>
-              <div class="fieldset">
-                <div class="pp__check">
-                  <div class="pp-check pp-check_c">
-                    <div class="pp-check__checkbox">
-                      <div class="check">
-                        <input
-                          class="styled-checkbox"
-                          id="agree1"
-                          value=""
-                          name="enter_checkbox1"
-                          type="checkbox"
-                        />
-                        <label for="agree1"></label>
-                      </div>
-                    </div>
-                    <div class="pp-check__text">
-                      <span>
-                        <label for="agree1">
-                          Я согласен на обработку персональных данных в
-                        соответствии с Федеральным законом от 27.07.2006
-                        № 152-ФЗ
-                        </label
-                        >
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="pp__check">
-                  <div class="pp-check pp-check_c">
-                    <div class="pp-check__checkbox">
-                      <div class="check">
-                        <input
-                          class="styled-checkbox"
-                          id="agree2"
-                          value=""
-                          name="enter_checkbox2"
-                          type="checkbox"
-                        />
-                        <label for="agree2"></label>
-                      </div>
-                    </div>
-                    <div class="pp-check__text">
-                      <span>
-                        <label for="agree2">
-                          Я согласен с
-                        <a
-                          href="#"
-                          target="_blank"
-                          >условиями размещения информации, изображений, объектов
-                          авторского права и иных результатов интеллектуальной
-                          деятельности</a
-                        </label
-                        >
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <input type="hidden" name="recaptcha" />
-                <div class="content-block__more content-block__more_darkred">
-                  <button
-                    type="submit"
-                    class="content-block-more next-step-proj"
-                    data-next="end"
-                    id="publish"
-                  >
-                    <span>Опубликовать</span>
+              <div class="manage__btns">
+                <div class="content-block__more manage__btn">
+                  <button type="submit" class="content-block-more manage__btn-publish">
+                    <span>Опубликовать акцию</span>
                   </button>
                 </div>
-
-                <span class="pp-content__information">
-                  Нажимая кнопку «Опубликовать», я подтверждаю, что ознакомился с
-                  <a href="#"
-                    >Политикой обработки персональных данных АНО «Центр 800»</a
-                  >
-                  и даю согласие на обработку моих персональных данных, указанных
-                  в форме анкеты, а также получение обратной
-                  информации
-                </span>
+                <div class="content-block__more">
+                  <button type="button" class="content-block-more manage__btn-cancel" data-graph-path="cancel-com">
+                    <span>Запретить публикацию акции</span>
+                  </button>
+                </div>
               </div>
             </form>
-            <div class="coll-success" style="display: none;">
-              <h2 class="coll-success__title">
-                Успешно
-                <svg class="">
-                  <use xlink:href="img/sprite.svg#success"></use>
-                </svg>
-              </h2>
-              <span>Благодарим вас, ваша заявка на модерации</span>
-            </div>
           </div>
         </div>
-
       </main>
     </div>
-    <div class="graph-modal popup-cropp cropp">
-      <div class="graph-modal__container cropp-cover" role="dialog" aria-modal="true" data-graph-target="cropp-cover">
+    <div class="graph-modal">
+      <div class="graph-modal__container popup-cancel" role="dialog" aria-modal="true" data-graph-target="cancel-com">
+        <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
         <div class="graph-modal__content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="imageModal">Выберите миниатюру</h5>
-          </div>
-          <div class="modal-body modal-body1 border-bottom">
-            <div id="croppieContainer"></div>
-          </div>
-          <div class="modal-footer">
-            <div class="content-block__more">
-              <button class="content-block-more btn btn-secondary crop-destroy js-modal-close" data-dismiss="modal">
-                <span>Отменить</span>
+          <h3>
+            Комментарий к запрету публикации акции
+          </h3>
+          <form>
+            <div class="input_box input_box_textarea info__item">
+              <div class="info__item__input textarea_box">
+                <textarea
+                  placeholder="Напишите здесь комментарий к запрету публикации акции. Комментарий увидит пользователь"
+                  id="col_desc"
+                  name="col_desc"
+                  rows="6"
+                ></textarea>
+                <div class="textarea_resize"></div>
+                <div class="textarea_resize"></div>
+                <div class="textarea_resize"></div>
+              </div>
+            </div>
+            <div class="content-block__more content-block__more_darkred">
+              <button
+                type="submit"
+                class="content-block-more next-step-proj"
+                data-next="end"
+              >
+                <span>Отправить</span>
               </button>
             </div>
-            <div class="content-block__more">
-              <button type="button" id="cropBtn" class="content-block-more btn btn-primary save-modal js-modal-close">
-                <span>Сохранить</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="graph-modal__container cropp-gallery" role="dialog" aria-modal="true" data-graph-target="cropp-gallery">
-        <div class="graph-modal__content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="imageModal">Выберите миниатюру</h5>
-          </div>
-          <div class="modal-body modal-body1 border-bottom">
-            <div id="croppieContainer"></div>
-          </div>
-          <div class="modal-footer">
-            <div class="content-block__more">
-              <button class="content-block-more btn btn-secondary crop-destroy js-modal-close" data-dismiss="modal">
-                <span>Отменить</span>
-              </button>
-            </div>
-            <div class="content-block__more">
-              <button type="button" id="cropBtn" class="content-block-more btn btn-primary save-modal js-modal-close">
-                <span>Сохранить</span>
-              </button>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

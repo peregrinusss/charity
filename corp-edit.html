@@ -6,8 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>Добрые дела</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/jquery.min.js"></script>
+  <script defer src="js/bootstrap.min.js"></script>
+  <script defer src="js/jq-inputmask.min.js"></script>
+  <script defer src="js/jq-validate.min.js"></script>
+  <script defer src="js/bootstrap-datepicker.min.js"></script>
+  <script defer src="js/datatables.js"></script>
+  <script defer src="js/autosize.min.js"></script>
+  <script defer src="js/croppie.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
@@ -95,7 +104,7 @@
                     <div class="upload__require-box">
                       <div class="require-box__item">
                         <p class="small_bold">
-                          Не более 1 Мб
+                          Не более 2 Мб
                         </p>
                       </div>
                       <div class="require-box__item">
@@ -180,19 +189,41 @@
 
                 <div class="input-group__row info__item border-bottom">
                   <div class="input-date_box">
-                    <div class="info__subtitle">
-                      <span class="field-req">Дата окончания сбора</span>
-                    </div>
-                    <div class="input_box data-input">
-                      <div class="sn-img">
-                        <img src="img/icons/calendar.svg" alt="calendar" />
+                    <div class="input-date__wrap" id="input-date-wrap">
+                      <div class="info__subtitle">
+                        <span class="field-req">Дата окончания сбора</span>
                       </div>
-                      <input
-                        name="dateEnd"
-                        id="date-end"
-                        class="input-date"
-                        type="text"
-                      />
+                      <div class="input_box data-input">
+                        <div class="sn-img">
+                          <img src="img/icons/calendar.svg" alt="calendar" />
+                        </div>
+                        <input
+                          name="dateEnd"
+                          id="date-end"
+                          class="input-date"
+                          type="text"
+                          class=""
+                        />
+                      </div>
+                    </div>
+                    <div class="input-date__checkbox">
+                      <div class="pp__check">
+                        <div class="pp-check pp-check_c">
+                          <div class="pp-check__checkbox">
+                            <div class="check">
+                              <input class="styled-checkbox" id="input-date-checkbox" value="" name="input_date_checkbox" type="checkbox">
+                              <label for="input-date-checkbox"></label>
+                            </div>
+                          </div>
+                          <div class="pp-check__text">
+                            <span>
+                              <label for="input-date-checkbox">
+                                Бессрочный сбор
+                              </label>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -852,6 +883,7 @@
                     type="submit"
                     class="content-block-more next-step-proj"
                     data-next="end"
+                    id="publish"
                   >
                     <span>Опубликовать</span>
                   </button>
