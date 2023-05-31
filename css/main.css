@@ -5183,6 +5183,7 @@ table.dataTable {
   background: #ebedff;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
+  font-weight: 500;
 }
 
 .vol_anketa_fields_item {
@@ -5711,4 +5712,48 @@ input.input-range-dis:focus {
   cursor: pointer;
   z-index: 1;
   pointer-events: all;
+}
+
+.upload-disabled input {
+  pointer-events: none;
+}
+
+.upload__area:hover .color_green {
+  color: #96F400;
+}
+
+.input-file-gallery__disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.coll-status {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.coll-status__item {
+  border-radius: 30px;
+  padding: 7px 15px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.coll-status__item-done {
+  background: rgb(27, 151, 11);
+}
+
+.coll-status__item-moderate {
+  background: #3344E5;
+}
+
+.admin-filter__fund {
+  margin-top: 24px;
+}
+
+.admin-filter__item-fund {
+  display: grid;
+  grid-template-columns: 135px 160px;
+  gap: 10px;
 }

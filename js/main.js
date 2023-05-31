@@ -4277,7 +4277,8 @@ if (document.querySelector('.profile__tabs')) {
 
 $.validator.addMethod('filesize', function (value, element, param) {
   return this.optional(element) || (element.files[0].size <= param)
-}, 'Размер файла должен быть меньше чем {0} Мб');
+}, 'Размер файла должен быть меньше {0} Мб');
+
 
 // Cropp file ava
 const cropAvaPopup = document.querySelector('.cropp-ava');
@@ -4331,6 +4332,7 @@ if (cropAvaPopup) {
     });
   });
 }
+
 
 // Cropp file cover
 const cropCoverPopup = document.querySelector('.cropp-cover');
@@ -4539,7 +4541,7 @@ $("#register-form").validate({
     reg_name: {
       maxlength: "Имя и фамилия должны быть не более 50-и символов"
     },
-  }
+  },
 });
 $("#collecting").validate({
   errorElement: "div",
@@ -4620,7 +4622,8 @@ $("#corporate").validate({
       required: true
     },
     nameAction: {
-      required: true
+      required: true,
+      maxlength: 25,
     },
     purpose: {
       required: true
@@ -4778,6 +4781,7 @@ $.extend($.validator.messages, {
   url: "Введите корретную ссылку",
   equalTo: "Пароли должны совпадать",
   extension: "Недопустимое разрешение файла",
+  maxlength: jQuery.validator.format("Введите не больше {0} символов.")
 });
 $.fn.datepicker.dates['ru'] = {
   days: ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"],

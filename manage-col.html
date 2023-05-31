@@ -35,6 +35,18 @@
             </div>
           </div>
           <div class="pp__content pp__content_questionnaire">
+            <div class="coll-status">
+              <span>Статус акции: </span>
+              <div class="coll-status__item coll-status__item-done">Опубликована</div>
+            </div>
+            <div class="coll-moderate">
+              <div class="coll-moderate__item">
+                Модерация от <span>31.01.2022</span>: Поменяйте логотип
+              </div>
+              <div class="coll-moderate__item">
+                Модерация от <span>28.01.2022</span>: Email не актуальный
+              </div>
+            </div>
             <h4 class="coll__title">Анкета частного сбора</h4>
             <form
             method=""
@@ -140,7 +152,7 @@
               </div>
 
               <div class="info__cover_upload input-file-cover border-bottom">
-                <div class="upload__area upload__area-cover js-upload-widget" data-size="5">
+                <div class="upload__area upload-disabled upload__area-cover js-upload-widget" data-size="5">
                   <input type="hidden" name="showcaseItemMainImage" value="" />
                   <img
                     class="upload__area_img"
@@ -175,11 +187,12 @@
                         opacity: 0;
                         height: 100%;
                       "
+                      class="unavailable"
                     />
                   </div>
                   <div
                     class="image-box image-preview js-upload-widget-preview"
-                    style="background-image: url()"
+                    style="background-image: url('./img/background.png')"
                   ></div>
                 </div>
                 <div class="upload__require-box">
@@ -243,8 +256,21 @@
               </div>
               <div class="info__item__gallery" name="gallery">
                 <div class="gallery__item">
-                  <div class="input-file-gallery" id="gallery-wrap">
+                  <div class="input-file-gallery input-file-gallery__disabled" id="gallery-wrap" style="margin-bottom: 30px;">
+                    <div class="gallery-img not-dragged">
+                      <div class="gallery-img__close">
+                        <img src="img/icons/close.svg" alt="">
+                      </div>
+                      <img src="img/stock.jpg">
+                    </div>
+                    <div class="gallery-img not-dragged">
+                      <div class="gallery-img__close">
+                        <img src="img/icons/close.svg" alt="">
+                      </div>
+                      <img src="img/stock.jpg">
+                    </div>
                   </div>
+                </div>
                   <div
                     class="info__cover_upload gallery__upload  js-upload-widget"
                     data-multiple="1"
@@ -252,7 +278,7 @@
                     data-template="#js-showcase-gallery-item"
                     id="input-gallery"
                   >
-                    <div class="upload__area upload__area-small multiple">
+                    <div class="upload__area upload-disabled upload__area-small multiple">
                       <img
                         class="upload__area_img"
                         src="img/icons/upload_small.svg"
@@ -289,6 +315,7 @@
                             height: 100%;
                           "
                           accept=".png, .jpg, .jpeg"
+                          class="unavailable"
                         />
                       </div>
                       <div class="image-box image-preview js-upload-widget-preview"></div>
@@ -313,384 +340,383 @@
                   </div>
                 </div>
               </div>
-            </div>
+              <div class="fieldset">
+                <div class="input-group__categgories info__item">
+                  <div class="info__subtitle">
+                    <p class="field-req">
+                      <b> Выбор фонда </b>
+                    </p>
+                  </div>
+                  <div class="pp-funds__list" id="funds-list">
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4645"
+                        name="fund"
+                        id="fund4645"
+                        checked=""
+                      />
+                      <label for="fund4645" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Доброе дело»
+                        </div>
 
-            <div class="fieldset">
-              <div class="input-group__categgories info__item">
-                <div class="info__subtitle">
-                  <p class="field-req">
-                    <b> Выбор фонда </b>
-                  </p>
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+
+                          <span class="pp-fund__reasons-label"
+                            >люди в трудной жизненной ситуации</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4661"
+                        name="fund"
+                        id="fund4661"
+                      />
+                      <label for="fund4661" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Нижегородский»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4664"
+                        name="fund"
+                        id="fund4664"
+                      />
+                      <label for="fund4664" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Фонд «Нижегородский онкологический научный центр»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4675"
+                        name="fund"
+                        id="fund4675"
+                      />
+                      <label for="fund4675" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Нижегородский региональный благотворительный фонд «Земля
+                          нижегородская». Нам 25 лет.
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label"
+                            >культурно-историческое наследие</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4676"
+                        name="fund"
+                        id="fund4676"
+                      />
+                      <label for="fund4676" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Волонтерское движение «Милосердие»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label"
+                            >люди в трудной жизненной ситуации</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4677"
+                        name="fund"
+                        id="fund4677"
+                      />
+                      <label for="fund4677" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Время РАСсвета»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4678"
+                        name="fund"
+                        id="fund4678"
+                      />
+                      <label for="fund4678" class="pp-fund__label">
+                        <div class="pp-fund__title">«Территория добра»</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">пожилые</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4651"
+                        name="fund"
+                        id="fund4651"
+                      />
+                      <label for="fund4651" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Жизнь без границ»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+
+                          <span class="pp-fund__reasons-label"
+                            >люди в трудной жизненной ситуации</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="4812"
+                        name="fund"
+                        id="fund4812"
+                      />
+                      <label for="fund4812" class="pp-fund__label">
+                        <div class="pp-fund__title">Фонд «Дети без мам»</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="5360"
+                        name="fund"
+                        id="fund5360"
+                      />
+                      <label for="fund5360" class="pp-fund__label">
+                        <div class="pp-fund__title">Хоккей для всех</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="5611"
+                        name="fund"
+                        id="fund5611"
+                      />
+                      <label for="fund5611" class="pp-fund__label">
+                        <div class="pp-fund__title">Сострадание НН</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">Животные</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="7123"
+                        name="fund"
+                        id="fund7123"
+                      />
+                      <label for="fund7123" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Нижегородская региональная благотворительная
+                          общественная организация инвалидов «Забота»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label"
+                            >люди в трудной жизненной ситуации</span
+                          >
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+
+                          <span class="pp-fund__reasons-label">пожилые</span>
+
+                          <span class="pp-fund__reasons-label">дети</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="8701"
+                        name="fund"
+                        id="fund8701"
+                      />
+                      <label for="fund8701" class="pp-fund__label">
+                        <div class="pp-fund__title">НООО «Сияние»</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">подростки</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="8703"
+                        name="fund"
+                        id="fund8703"
+                      />
+                      <label for="fund8703" class="pp-fund__label">
+                        <div class="pp-fund__title">НРООИ «Инватур»</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label"
+                            >люди в трудной жизненной ситуации</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="8779"
+                        name="fund"
+                        id="fund8779"
+                      />
+                      <label for="fund8779" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          МБОО «Сообщество семей слепоглухих»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">дети</span>
+
+                          <span class="pp-fund__reasons-label">пожилые</span>
+
+                          <span class="pp-fund__reasons-label"
+                            >люди в трудной жизненной ситуации</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="10670"
+                        name="fund"
+                        id="fund10670"
+                      />
+                      <label for="fund10670" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Во Благо — Дар»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label"
+                            >помощь животным</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="24340"
+                        name="fund"
+                        id="fund24340"
+                      />
+                      <label for="fund24340" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Планета кошек»
+                        </div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label"
+                            >помощь животным</span
+                          >
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="25001"
+                        name="fund"
+                        id="fund25001"
+                      />
+                      <label for="fund25001" class="pp-fund__label">
+                        <div class="pp-fund__title">«Угол»</div>
+
+                        <div class="pp-fund__reasons-labels">
+                          <span class="pp-fund__reasons-label">животные</span>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="pp-fund__item">
+                      <input
+                        type="radio"
+                        value="25052"
+                        name="fund"
+                        id="fund25052"
+                      />
+                      <label for="fund25052" class="pp-fund__label">
+                        <div class="pp-fund__title">
+                          Благотворительный фонд «Больше чем можешь»
+                        </div>
+                      </label>
+                    </div>
+                  </div>
                 </div>
-                <div class="pp-funds__list" id="funds-list">
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="4645"
-                      name="fund"
-                      id="fund4645"
-                      checked=""
-                    />
-                    <label for="fund4645" class="pp-fund__label">
-                      <div class="pp-fund__title">
-                        Благотворительный фонд «Доброе дело»
-                      </div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label">дети</span>
-
-                        <span class="pp-fund__reasons-label">подростки</span>
-
-                        <span class="pp-fund__reasons-label"
-                          >люди в трудной жизненной ситуации</span
-                        >
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="4661"
-                      name="fund"
-                      id="fund4661"
-                    />
-                    <label for="fund4661" class="pp-fund__label">
-                      <div class="pp-fund__title">
-                        Благотворительный фонд «Нижегородский»
-                      </div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label">дети</span>
-
-                        <span class="pp-fund__reasons-label">подростки</span>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="4664"
-                      name="fund"
-                      id="fund4664"
-                    />
-                    <label for="fund4664" class="pp-fund__label">
-                      <div class="pp-fund__title">
-                        Фонд «Нижегородский онкологический научный центр»
-                      </div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label">дети</span>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="4675"
-                      name="fund"
-                      id="fund4675"
-                    />
-                    <label for="fund4675" class="pp-fund__label">
-                      <div class="pp-fund__title">
-                        Нижегородский региональный благотворительный фонд «Земля
-                        нижегородская». Нам 25 лет.
-                      </div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label"
-                          >культурно-историческое наследие</span
-                        >
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="4676"
-                      name="fund"
-                      id="fund4676"
-                    />
-                    <label for="fund4676" class="pp-fund__label">
-                      <div class="pp-fund__title">
-                        Волонтерское движение «Милосердие»
-                      </div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label"
-                          >люди в трудной жизненной ситуации</span
-                        >
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="4677"
-                      name="fund"
-                      id="fund4677"
-                    />
-                    <label for="fund4677" class="pp-fund__label">
-                      <div class="pp-fund__title">
-                        Благотворительный фонд «Время РАСсвета»
-                      </div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label">дети</span>
-
-                        <span class="pp-fund__reasons-label">подростки</span>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="4678"
-                      name="fund"
-                      id="fund4678"
-                    />
-                    <label for="fund4678" class="pp-fund__label">
-                      <div class="pp-fund__title">«Территория добра»</div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label">пожилые</span>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="4651"
-                      name="fund"
-                      id="fund4651"
-                    />
-                    <label for="fund4651" class="pp-fund__label">
-                      <div class="pp-fund__title">
-                        Благотворительный фонд «Жизнь без границ»
-                      </div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label">дети</span>
-
-                        <span class="pp-fund__reasons-label">подростки</span>
-
-                        <span class="pp-fund__reasons-label"
-                          >люди в трудной жизненной ситуации</span
-                        >
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="4812"
-                      name="fund"
-                      id="fund4812"
-                    />
-                    <label for="fund4812" class="pp-fund__label">
-                      <div class="pp-fund__title">Фонд «Дети без мам»</div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label">дети</span>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="5360"
-                      name="fund"
-                      id="fund5360"
-                    />
-                    <label for="fund5360" class="pp-fund__label">
-                      <div class="pp-fund__title">Хоккей для всех</div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label">дети</span>
-
-                        <span class="pp-fund__reasons-label">подростки</span>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="5611"
-                      name="fund"
-                      id="fund5611"
-                    />
-                    <label for="fund5611" class="pp-fund__label">
-                      <div class="pp-fund__title">Сострадание НН</div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label">Животные</span>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="7123"
-                      name="fund"
-                      id="fund7123"
-                    />
-                    <label for="fund7123" class="pp-fund__label">
-                      <div class="pp-fund__title">
-                        Нижегородская региональная благотворительная
-                        общественная организация инвалидов «Забота»
-                      </div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label"
-                          >люди в трудной жизненной ситуации</span
-                        >
-
-                        <span class="pp-fund__reasons-label">подростки</span>
-
-                        <span class="pp-fund__reasons-label">пожилые</span>
-
-                        <span class="pp-fund__reasons-label">дети</span>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="8701"
-                      name="fund"
-                      id="fund8701"
-                    />
-                    <label for="fund8701" class="pp-fund__label">
-                      <div class="pp-fund__title">НООО «Сияние»</div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label">дети</span>
-
-                        <span class="pp-fund__reasons-label">подростки</span>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="8703"
-                      name="fund"
-                      id="fund8703"
-                    />
-                    <label for="fund8703" class="pp-fund__label">
-                      <div class="pp-fund__title">НРООИ «Инватур»</div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label"
-                          >люди в трудной жизненной ситуации</span
-                        >
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="8779"
-                      name="fund"
-                      id="fund8779"
-                    />
-                    <label for="fund8779" class="pp-fund__label">
-                      <div class="pp-fund__title">
-                        МБОО «Сообщество семей слепоглухих»
-                      </div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label">дети</span>
-
-                        <span class="pp-fund__reasons-label">пожилые</span>
-
-                        <span class="pp-fund__reasons-label"
-                          >люди в трудной жизненной ситуации</span
-                        >
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="10670"
-                      name="fund"
-                      id="fund10670"
-                    />
-                    <label for="fund10670" class="pp-fund__label">
-                      <div class="pp-fund__title">
-                        Благотворительный фонд «Во Благо — Дар»
-                      </div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label"
-                          >помощь животным</span
-                        >
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="24340"
-                      name="fund"
-                      id="fund24340"
-                    />
-                    <label for="fund24340" class="pp-fund__label">
-                      <div class="pp-fund__title">
-                        Благотворительный фонд «Планета кошек»
-                      </div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label"
-                          >помощь животным</span
-                        >
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="25001"
-                      name="fund"
-                      id="fund25001"
-                    />
-                    <label for="fund25001" class="pp-fund__label">
-                      <div class="pp-fund__title">«Угол»</div>
-
-                      <div class="pp-fund__reasons-labels">
-                        <span class="pp-fund__reasons-label">животные</span>
-                      </div>
-                    </label>
-                  </div>
-                  <div class="pp-fund__item">
-                    <input
-                      type="radio"
-                      value="25052"
-                      name="fund"
-                      id="fund25052"
-                    />
-                    <label for="fund25052" class="pp-fund__label">
-                      <div class="pp-fund__title">
-                        Благотворительный фонд «Больше чем можешь»
-                      </div>
-                    </label>
-                  </div>
+              </div>
+              <div class="manage__btns">
+                <div class="content-block__more manage__btn">
+                  <button type="submit" class="content-block-more manage__btn-publish">
+                    <span>Опубликовать акцию</span>
+                  </button>
+                </div>
+                <div class="content-block__more">
+                  <button type="button" class="content-block-more manage__btn-cancel" data-graph-path="cancel-com">
+                    <span>Запретить публикацию акции</span>
+                  </button>
                 </div>
               </div>
+            </form>
             </div>
-            <div class="manage__btns">
-              <div class="content-block__more manage__btn">
-                <button type="submit" class="content-block-more manage__btn-publish">
-                  <span>Опубликовать акцию</span>
-                </button>
-              </div>
-              <div class="content-block__more">
-                <button type="button" class="content-block-more manage__btn-cancel" data-graph-path="cancel-com">
-                  <span>Запретить публикацию акции</span>
-                </button>
-              </div>
-            </div>
-          </form>
           </div>
         </div>
       </main>

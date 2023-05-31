@@ -35,243 +35,59 @@
             </div>
           </div>
           <div class="pp__content pp__content_questionnaire">
+            <div class="coll-status">
+              <span>Статус акции: </span>
+              <div class="coll-status__item coll-status__item-moderate">На модерации</div>
+            </div>
+            <div class="coll-moderate">
+              <div class="coll-moderate__item">
+                Модерация от <span>31.01.2022</span>: Поменяйте логотип
+              </div>
+              <div class="coll-moderate__item">
+                Модерация от <span>28.01.2022</span>: Email не актуальный
+              </div>
+            </div>
             <h4 class="coll__title">Анкета корпо&shy;ративного сбора</h4>
-            <form
-              method=""
+            <form method=""
               id="corporate"
               class="pp-content__form js-city-action-add"
-              enctype="multipart/form-data"
-              novalidate="novalidate"
             >
-              <div class="fieldset">
-                <h5>Информация о компании</h5>
-                <div class="info__item">
-                  <div class="input_box">
-                    <div class="info__subtitle">
-                      <span class="field-req">Название организации</span>
-                    </div>
-                    <input
-                    type="text"
-                    name="corp_org_name"
-                  />
-                  </div>
-                </div>
-
-                <div class="info__item border-bottom-bold">
+            <div class="fieldset">
+              <h5>Информация о компании</h5>
+              <div class="info__item">
+                <div class="input_box">
                   <div class="info__subtitle">
-                    <p>
-                      <b> Логотип организации </b>
-                    </p>
+                    <span class="field-req">Название организации</span>
                   </div>
-                  <div class="upload__ava"></div>
-                  <div class="info__cover_upload info__cover_upload_ava input-file-ava">
-                    <div class="upload__area js-upload-widget" data-size="5">
-                      <input type="hidden" name="actionItemAuthorImg" value="">
-                      <img class="upload__area_img" src="img/icons/upload.svg" alt="">
-                      <span class="upload__area_text">
-                        Перетащите фото в это поле или
-                        <span class="user-file color_green"> выберите файл </span>
-                        с вашего компьютера
-                      </span>
-                      <div class="inner-div js-upload-widget-button" style="
-                          position: relative;
-                          overflow: hidden;
-                          direction: ltr;
-                        ">
-                        <input qq-button-id="bd28953d-b7d3-4521-b4a7-3454fdd7b847" title="Выберите файл" type="file" id="reg_file" accept=".png, .jpg, .jpeg" name="reg_file" style="
-                            position: absolute;
-                            right: 0px;
-                            top: 0px;
-                            font-family: Arial;
-                            font-size: 118px;
-                            margin: 0px;
-                            padding: 0px;
-                            cursor: pointer;
-                            opacity: 0;
-                            height: 100%;
-                          ">
-                      </div>
-                      <div class="image-box image-preview js-upload-widget-preview" style="background-image: url()"></div>
-                    </div>
-                    <div class="upload__require-box">
-                      <div class="require-box__item">
-                        <p class="small_bold">
-                          Не более 2 Мб
-                        </p>
-                      </div>
-                      <div class="require-box__item">
-                        <p class="small_bold">
-                          Допустимые форматы изображения: JPG, GIF, PNG
-                        </p>
-                      </div>
-                      <div class="require-box__item">
-                        <p class="small_bold">
-                          Важно! На фото не должно быть надписей и водяных знаков
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  <input
+                  type="text"
+                  name="corp_org_name"
+                />
                 </div>
               </div>
 
-              <div class="fieldset">
-                <h5>Контакнтное лицо от организации</h5>
-                <div class="info__item">
-                  <div class="input_box">
-                    <div class="info__subtitle">
-                      <span class="field-req">ФИО</span>
-                    </div>
-                    <input
-                    type="text"
-                    name="corp_name"
-                  />
-                  </div>
-                </div>
-                <div class="info__item">
-                  <div class="input_box">
-                    <div class="info__subtitle">
-                      <span class="field-req">Почта</span>
-                    </div>
-                    <input
-                    type="email"
-                    name="corp_email"
-                  />
-                  </div>
-                </div>
-                <div class="info__item border-bottom-bold">
-                  <div class="input_box">
-                    <div class="info__subtitle">
-                      <span class="field-req">Контактный телефон</span>
-                    </div>
-                    <input
-                    type="tel"
-                    name="corp_tel"
-                    id="corp_tel"
-                  />
-                  </div>
-                </div>
-              </div>
-
-              <div class="fieldset">
-                <h5>Информация о сборе</h5>
-                <div class="info__item">
-                  <div class="input_box">
-                    <div class="info__subtitle">
-                      <span class="field-req">Название сбора</span>
-                    </div>
-                    <input
-                      type="text"
-                      name="nameAction"
-                      id="nameAction"
-                    />
-                  </div>
-                </div>
-                <div class="info__item">
-                  <div class="input_box">
-                    <div class="info__subtitle">
-                      <span class="field-req">Цель сбора</span>
-                    </div>
-                    <input
-                      type="text"
-                      name="purpose"
-                      id="purpose"
-                    />
-                  </div>
-                </div>
-
-                <div class="input-group__row info__item border-bottom">
-                  <div class="input-date_box">
-                    <div class="input-date__wrap" id="input-date-wrap">
-                      <div class="info__subtitle">
-                        <span class="field-req">Дата окончания сбора</span>
-                      </div>
-                      <div class="input_box data-input">
-                        <div class="sn-img">
-                          <img src="img/icons/calendar.svg" alt="calendar" />
-                        </div>
-                        <input
-                          name="dateEnd"
-                          id="date-end"
-                          class="input-date"
-                          type="text"
-                          class=""
-                        />
-                      </div>
-                    </div>
-                    <div class="input-date__checkbox">
-                      <div class="pp__check">
-                        <div class="pp-check pp-check_c">
-                          <div class="pp-check__checkbox">
-                            <div class="check">
-                              <input class="styled-checkbox" id="input-date-checkbox" value="" name="input_date_checkbox" type="checkbox">
-                              <label for="input-date-checkbox"></label>
-                            </div>
-                          </div>
-                          <div class="pp-check__text">
-                            <span>
-                              <label for="input-date-checkbox">
-                                Бессрочный сбор
-                              </label>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="input_box input_box-goal">
-                    <div class="info__subtitle">
-                      <span class="field-req">Финансовая цель, руб</span>
-                    </div>
-                    <input id="goal" type="text" name="goal" />
-                  </div>
-                </div>
-
-                <div class="input_box input_box_textarea info__item border-bottom">
-                  <div class="info__subtitle">
-                    <p class="field-req">
-                      <b>Описание сбора</b>
-                    </p>
-                  </div>
-                  <div class="info__item__input textarea_box">
-                    <textarea placeholder="" id="col_desc" name="col_desc" rows="6"></textarea>
-                    <div class="textarea_resize"></div>
-                    <div class="textarea_resize"></div>
-                    <div class="textarea_resize"></div>
-                  </div>
-                </div>
-
+              <div class="info__item border-bottom-bold">
                 <div class="info__subtitle">
-                  <p class="field-req">
-                    <b> Обложка сбора </b>
+                  <p>
+                    <b> Логотип организации </b>
                   </p>
                 </div>
-
-                <div class="info__cover_upload input-file-cover border-bottom">
-                  <div class="upload__area upload__area-cover js-upload-widget" data-size="5">
-                    <input type="hidden" name="showcaseItemMainImage" value="" />
-                    <img
-                      class="upload__area_img"
-                      src="img/icons/upload.svg"
-                      alt=""
-                    />
+                <div class="upload__ava"></div>
+                <div class="info__cover_upload info__cover_upload_ava input-file-ava">
+                  <div class="upload__area upload-disabled js-upload-widget" data-size="5">
+                    <input type="hidden" name="actionItemAuthorImg" value="">
+                    <img class="upload__area_img" src="img/icons/upload.svg" alt="">
                     <span class="upload__area_text">
                       Перетащите фото в это поле или
                       <span class="user-file color_green"> выберите файл </span>
                       с вашего компьютера
                     </span>
-                    <div
-                      class="inner-div js-upload-widget-button"
-                      style="position: relative; overflow: hidden; direction: ltr"
-                    >
-                      <input
-                        qq-button-id="8370dd11-cb86-440f-9da2-0a7fcf620a99"
-                        title="Выберите файл"
-                        type="file"
-                        name="col_cover"
-                        id="col_cover"
-                        accept=".png, .jpg, .jpeg"
-                        style="
+                    <div class="inner-div js-upload-widget-button" style="
+                        position: relative;
+                        overflow: hidden;
+                        direction: ltr;
+                      ">
+                      <input class="unavailable" qq-button-id="bd28953d-b7d3-4521-b4a7-3454fdd7b847" title="Выберите файл" type="file" id="reg_file" accept=".png, .jpg, .jpeg" name="reg_file" style="
                           position: absolute;
                           right: 0px;
                           top: 0px;
@@ -282,147 +98,353 @@
                           cursor: pointer;
                           opacity: 0;
                           height: 100%;
-                        "
-                      />
+                        ">
                     </div>
-                    <div
-                      class="image-box image-preview js-upload-widget-preview"
-                      style="background-image: url()"
-                    ></div>
+                    <div class="image-box image-preview js-upload-widget-preview" style="background-image: url('./img/avatar.jpeg')"></div>
                   </div>
                   <div class="upload__require-box">
                     <div class="require-box__item">
                       <p class="small_bold">
-                        Изображение должно быть горизонтальной <br> ориентации, формата JPG, JPEG, PNG.
+                        Не более 2 Мб
                       </p>
                     </div>
                     <div class="require-box__item">
                       <p class="small_bold">
-                        Размер файла не более 2 Мб.
+                        Допустимые форматы изображения: JPG, GIF, PNG
+                      </p>
+                    </div>
+                    <div class="require-box__item">
+                      <p class="small_bold">
+                        Важно! На фото не должно быть надписей и водяных знаков
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="fieldset">
-                <div class="input-group__categgories info__item border-bottom">
+            </div>
+
+            <div class="fieldset">
+              <h5>Контакнтное лицо от организации</h5>
+              <div class="info__item">
+                <div class="input_box">
                   <div class="info__subtitle">
-                    <p>
-                      <b> Фильтры для поиска</b>
-                    </p>
+                    <span class="field-req">ФИО</span>
                   </div>
-                  <div class="info__descript">
-                    <span>Выберите один или несколько. Фильтр поможет найти эту акцию для целевого пожертвования</span>
-                  </div>
-                  <div class="categories-box" id="col_filter">
-                    <div class="categories-box__item">
-                        <input type="checkbox" name="col_filter" id="filter-1" value="1">
-                        <label for="filter-1">Дети</label>
-                    </div>
-                    <div class="categories-box__item">
-                        <input type="checkbox" name="col_filter" id="filter-2" value="2">
-                        <label for="filter-2">Подростки</label>
-                    </div>
-                    <div class="categories-box__item">
-                        <input type="checkbox" name="col_filter" id="filter-3" value="3">
-                        <label for="filter-3">Пожилые</label>
-                    </div>
-                    <div class="categories-box__item">
-                        <input type="checkbox" name="col_filter" id="filter-4" value="4">
-                        <label for="filter-4">Люди в трудной жизненной ситуации</label>
-                    </div>
-                    <div class="categories-box__item">
-                        <input type="checkbox" name="col_filter" id="filter-5" value="5">
-                        <label for="filter-5">Животные</label>
-                    </div>
-                    <div class="categories-box__item">
-                        <input type="checkbox" name="col_filter" id="filter-6" value="6">
-                        <label for="filter-6">Культурно-историческое наследие</label>
-                    </div>
+                  <input
+                  type="text"
+                  name="corp_name"
+                />
                 </div>
+              </div>
+              <div class="info__item">
+                <div class="input_box">
+                  <div class="info__subtitle">
+                    <span class="field-req">Почта</span>
+                  </div>
+                  <input
+                  type="email"
+                  name="corp_email"
+                />
+                </div>
+              </div>
+              <div class="info__item border-bottom-bold">
+                <div class="input_box">
+                  <div class="info__subtitle">
+                    <span class="field-req">Контактный телефон</span>
+                  </div>
+                  <input
+                  type="tel"
+                  name="corp_tel"
+                  id="corp_tel"
+                />
+                </div>
+              </div>
+            </div>
+
+            <div class="fieldset">
+              <h5>Информация о сборе</h5>
+              <div class="info__item">
+                <div class="input_box">
+                  <div class="info__subtitle">
+                    <span class="field-req">Название сбора</span>
+                  </div>
+                  <input
+                    type="text"
+                    name="nameAction"
+                    id="nameAction"
+                  />
+                </div>
+              </div>
+              <div class="info__item">
+                <div class="input_box">
+                  <div class="info__subtitle">
+                    <span class="field-req">Цель сбора</span>
+                  </div>
+                  <input
+                    type="text"
+                    name="purpose"
+                    id="purpose"
+                  />
                 </div>
               </div>
 
-              <div class="info__item border-bottom">
+              <div class="input-group__row info__item border-bottom">
+                <div class="input-date_box">
+                  <div class="input-date__wrap" id="input-date-wrap">
+                    <div class="info__subtitle">
+                      <span class="field-req">Дата окончания сбора</span>
+                    </div>
+                    <div class="input_box data-input">
+                      <div class="sn-img">
+                        <img src="img/icons/calendar.svg" alt="calendar" />
+                      </div>
+                      <input
+                        name="dateEnd"
+                        id="date-end"
+                        class="input-date"
+                        type="text"
+                        class=""
+                      />
+                    </div>
+                  </div>
+                  <div class="input-date__checkbox">
+                    <div class="pp__check">
+                      <div class="pp-check pp-check_c">
+                        <div class="pp-check__checkbox">
+                          <div class="check">
+                            <input class="styled-checkbox" id="input-date-checkbox" value="" name="input_date_checkbox" type="checkbox">
+                            <label for="input-date-checkbox"></label>
+                          </div>
+                        </div>
+                        <div class="pp-check__text">
+                          <span>
+                            <label for="input-date-checkbox">
+                              Бессрочный сбор
+                            </label>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input_box input_box-goal">
+                  <div class="info__subtitle">
+                    <span class="field-req">Финансовая цель, руб</span>
+                  </div>
+                  <input id="goal" type="text" name="goal" />
+                </div>
+              </div>
+
+              <div class="input_box input_box_textarea info__item border-bottom">
                 <div class="info__subtitle">
                   <p class="field-req">
-                    <b> Фото-галерея акции </b>
+                    <b>Описание сбора</b>
                   </p>
                 </div>
-                <div class="info__item__gallery" name="gallery">
-                  <div class="gallery__item">
-                    <div class="input-file-gallery" id="gallery-wrap">
-                    </div>
-                    <div
-                      class="info__cover_upload gallery__upload  js-upload-widget"
-                      data-multiple="1"
-                      data-size="5"
-                      data-template="#js-showcase-gallery-item"
-                      id="input-gallery"
-                    >
-                      <div class="upload__area upload__area-small multiple">
-                        <img
-                          class="upload__area_img"
-                          src="img/icons/upload_small.svg"
-                          alt="upload_small"
-                        />
-                        <span class="upload__area_text">
-                          <div class="user-file">Загрузить изображение</div>
-                        </span>
-                        <div
-                          class="inner-div js-upload-widget-button"
-                          style="
-                            position: relative;
-                            overflow: hidden;
-                            direction: ltr;
-                          "
-                        >
-                          <input
-                            qq-button-id="1ee2334e-e121-44ef-8bf8-a255a41e88df"
-                            title="Выберите файл"
-                            multiple=""
-                            type="file"
-                            name="col_gallery"
-                            id="col_gallery"
-                            style="
-                              position: absolute;
-                              right: 0px;
-                              top: 0px;
-                              font-family: Arial;
-                              font-size: 118px;
-                              margin: 0px;
-                              padding: 0px;
-                              cursor: pointer;
-                              opacity: 0;
-                              height: 100%;
-                            "
-                            accept=".png, .jpg, .jpeg"
-                          />
-                        </div>
-                        <div class="image-box image-preview js-upload-widget-preview"></div>
+                <div class="info__item__input textarea_box">
+                  <textarea placeholder="" id="col_desc" name="col_desc" rows="6"></textarea>
+                  <div class="textarea_resize"></div>
+                  <div class="textarea_resize"></div>
+                  <div class="textarea_resize"></div>
+                </div>
+              </div>
+
+              <div class="info__subtitle">
+                <p class="field-req">
+                  <b> Обложка сбора </b>
+                </p>
+              </div>
+
+              <div class="info__cover_upload input-file-cover border-bottom">
+                <div class="upload__area upload-disabled upload__area-cover js-upload-widget" data-size="5">
+                  <input type="hidden" name="showcaseItemMainImage" value="" />
+                  <img
+                    class="upload__area_img"
+                    src="img/icons/upload.svg"
+                    alt=""
+                  />
+                  <span class="upload__area_text">
+                    Перетащите фото в это поле или
+                    <span class="user-file color_green"> выберите файл </span>
+                    с вашего компьютера
+                  </span>
+                  <div
+                    class="inner-div js-upload-widget-button"
+                    style="position: relative; overflow: hidden; direction: ltr"
+                  >
+                    <input
+                      qq-button-id="8370dd11-cb86-440f-9da2-0a7fcf620a99"
+                      title="Выберите файл"
+                      type="file"
+                      name="col_cover"
+                      id="col_cover"
+                      accept=".png, .jpg, .jpeg"
+                      style="
+                        position: absolute;
+                        right: 0px;
+                        top: 0px;
+                        font-family: Arial;
+                        font-size: 118px;
+                        margin: 0px;
+                        padding: 0px;
+                        cursor: pointer;
+                        opacity: 0;
+                        height: 100%;
+                      "
+                      class="unavailable"
+                    />
+                  </div>
+                  <div
+                    class="image-box image-preview js-upload-widget-preview"
+                    style="background-image: url('./img/background.png')"
+                  ></div>
+                </div>
+                <div class="upload__require-box">
+                  <div class="require-box__item">
+                    <p class="small_bold">
+                      Изображение должно быть горизонтальной <br> ориентации, формата JPG, JPEG, PNG.
+                    </p>
+                  </div>
+                  <div class="require-box__item">
+                    <p class="small_bold">
+                      Размер файла не более 2 Мб.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fieldset">
+              <div class="input-group__categgories info__item border-bottom">
+                <div class="info__subtitle">
+                  <p>
+                    <b> Фильтры для поиска</b>
+                  </p>
+                </div>
+                <div class="info__descript">
+                  <span>Выберите один или несколько. Фильтр поможет найти эту акцию для целевого пожертвования</span>
+                </div>
+                <div class="categories-box" id="col_filter">
+                  <div class="categories-box__item">
+                      <input type="checkbox" name="col_filter" id="filter-1" value="1">
+                      <label for="filter-1">Дети</label>
+                  </div>
+                  <div class="categories-box__item">
+                      <input type="checkbox" name="col_filter" id="filter-2" value="2">
+                      <label for="filter-2">Подростки</label>
+                  </div>
+                  <div class="categories-box__item">
+                      <input type="checkbox" name="col_filter" id="filter-3" value="3">
+                      <label for="filter-3">Пожилые</label>
+                  </div>
+                  <div class="categories-box__item">
+                      <input type="checkbox" name="col_filter" id="filter-4" value="4">
+                      <label for="filter-4">Люди в трудной жизненной ситуации</label>
+                  </div>
+                  <div class="categories-box__item">
+                      <input type="checkbox" name="col_filter" id="filter-5" value="5">
+                      <label for="filter-5">Животные</label>
+                  </div>
+                  <div class="categories-box__item">
+                      <input type="checkbox" name="col_filter" id="filter-6" value="6">
+                      <label for="filter-6">Культурно-историческое наследие</label>
+                  </div>
+              </div>
+              </div>
+            </div>
+
+            <div class="info__item border-bottom">
+              <div class="info__subtitle">
+                <p class="field-req">
+                  <b> Фото-галерея акции </b>
+                </p>
+              </div>
+              <div class="info__item__gallery" name="gallery">
+                <div class="gallery__item">
+                  <div class="input-file-gallery input-file-gallery__disabled" id="gallery-wrap" style="margin-bottom: 30px;">
+                    <div class="gallery-img not-dragged">
+                      <div class="gallery-img__close">
+                        <img src="img/icons/close.svg" alt="">
                       </div>
-                      <div class="upload__require-box upload__require-box-small">
-                        <div class="require-box__item">
-                          <p class="small_bold">
-                            Допустимые форматы изображения: JPG, JPEG, PNG.
-                          </p>
-                        </div>
-                        <div class="require-box__item">
-                          <p class="small_bold">
-                            Размер каждого файла не более 2 Мб.
-                          </p>
-                        </div>
-                        <div class="require-box__item">
-                          <p class="small_bold">
-                            Для красоты вашей галереи рекомендуем вам <br> использовать изображения одной ориентации
-                          </p>
-                        </div>
+                      <img src="img/stock.jpg">
+                    </div>
+                    <div class="gallery-img not-dragged">
+                      <div class="gallery-img__close">
+                        <img src="img/icons/close.svg" alt="">
+                      </div>
+                      <img src="img/stock.jpg">
+                    </div>
+                  </div>
+                  </div>
+                  <div
+                    class="info__cover_upload gallery__upload  js-upload-widget"
+                    data-multiple="1"
+                    data-size="5"
+                    data-template="#js-showcase-gallery-item"
+                    id="input-gallery"
+                  >
+                    <div class="upload__area upload-disabled upload__area-small multiple">
+                      <img
+                        class="upload__area_img"
+                        src="img/icons/upload_small.svg"
+                        alt="upload_small"
+                      />
+                      <span class="upload__area_text">
+                        <div class="user-file">Загрузить изображение</div>
+                      </span>
+                      <div
+                        class="inner-div js-upload-widget-button"
+                        style="
+                          position: relative;
+                          overflow: hidden;
+                          direction: ltr;
+                        "
+                      >
+                        <input
+                          qq-button-id="1ee2334e-e121-44ef-8bf8-a255a41e88df"
+                          title="Выберите файл"
+                          multiple=""
+                          type="file"
+                          name="col_gallery"
+                          id="col_gallery"
+                          style="
+                            position: absolute;
+                            right: 0px;
+                            top: 0px;
+                            font-family: Arial;
+                            font-size: 118px;
+                            margin: 0px;
+                            padding: 0px;
+                            cursor: pointer;
+                            opacity: 0;
+                            height: 100%;
+                          "
+                          accept=".png, .jpg, .jpeg"
+                          class="unavailable"
+                        />
+                      </div>
+                      <div class="image-box image-preview js-upload-widget-preview"></div>
+                    </div>
+                    <div class="upload__require-box upload__require-box-small">
+                      <div class="require-box__item">
+                        <p class="small_bold">
+                          Допустимые форматы изображения: JPG, JPEG, PNG.
+                        </p>
+                      </div>
+                      <div class="require-box__item">
+                        <p class="small_bold">
+                          Размер каждого файла не более 2 Мб.
+                        </p>
+                      </div>
+                      <div class="require-box__item">
+                        <p class="small_bold">
+                          Для красоты вашей галереи рекомендуем вам <br> использовать изображения одной ориентации
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
               <div class="fieldset">
                 <div class="input-group__categgories info__item">
                   <div class="info__subtitle">
@@ -799,6 +821,7 @@
                 </div>
               </div>
             </form>
+            </div>
           </div>
         </div>
       </main>
