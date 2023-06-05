@@ -153,59 +153,10 @@
 
               <div class="info__cover_upload input-file-cover border-bottom">
                 <div class="upload__area upload-disabled upload__area-cover js-upload-widget" data-size="5">
-                  <input type="hidden" name="showcaseItemMainImage" value="" />
-                  <img
-                    class="upload__area_img"
-                    src="img/icons/upload.svg"
-                    alt=""
-                  />
-                  <span class="upload__area_text">
-                    Перетащите фото в это поле или
-                    <span class="user-file color_green"> выберите файл </span>
-                    с вашего компьютера
-                  </span>
-                  <div
-                    class="inner-div js-upload-widget-button"
-                    style="position: relative; overflow: hidden; direction: ltr"
-                  >
-                    <input
-                      qq-button-id="8370dd11-cb86-440f-9da2-0a7fcf620a99"
-                      title="Выберите файл"
-                      type="file"
-                      name="col_cover"
-                      id="col_cover"
-                      accept=".png, .jpg, .jpeg"
-                      style="
-                        position: absolute;
-                        right: 0px;
-                        top: 0px;
-                        font-family: Arial;
-                        font-size: 118px;
-                        margin: 0px;
-                        padding: 0px;
-                        cursor: pointer;
-                        opacity: 0;
-                        height: 100%;
-                      "
-                      class="unavailable"
-                    />
-                  </div>
                   <div
                     class="image-box image-preview js-upload-widget-preview"
-                    style="background-image: url('./img/background.png')"
+                    style="background-image: url('./img/stock_cover.jpg')"
                   ></div>
-                </div>
-                <div class="upload__require-box">
-                  <div class="require-box__item">
-                    <p class="small_bold">
-                      Изображение должно быть горизонтальной <br> ориентации, формата JPG, JPEG, PNG.
-                    </p>
-                  </div>
-                  <div class="require-box__item">
-                    <p class="small_bold">
-                      Размер файла не более 2 Мб.
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -255,88 +206,15 @@
                 </p>
               </div>
               <div class="info__item__gallery" name="gallery">
-                <div class="gallery__item">
+                <div class="gallery__item upload-disabled">
                   <div class="input-file-gallery input-file-gallery__disabled" id="gallery-wrap" style="margin-bottom: 30px;">
                     <div class="gallery-img not-dragged">
-                      <div class="gallery-img__close">
-                        <img src="img/icons/close.svg" alt="">
-                      </div>
                       <img src="img/stock.jpg">
                     </div>
                     <div class="gallery-img not-dragged">
-                      <div class="gallery-img__close">
-                        <img src="img/icons/close.svg" alt="">
-                      </div>
                       <img src="img/stock.jpg">
                     </div>
                   </div>
-                </div>
-                  <div
-                    class="info__cover_upload gallery__upload  js-upload-widget"
-                    data-multiple="1"
-                    data-size="5"
-                    data-template="#js-showcase-gallery-item"
-                    id="input-gallery"
-                  >
-                    <div class="upload__area upload-disabled upload__area-small multiple">
-                      <img
-                        class="upload__area_img"
-                        src="img/icons/upload_small.svg"
-                        alt="upload_small"
-                      />
-                      <span class="upload__area_text">
-                        <div class="user-file">Загрузить изображение</div>
-                      </span>
-                      <div
-                        class="inner-div js-upload-widget-button"
-                        style="
-                          position: relative;
-                          overflow: hidden;
-                          direction: ltr;
-                        "
-                      >
-                        <input
-                          qq-button-id="1ee2334e-e121-44ef-8bf8-a255a41e88df"
-                          title="Выберите файл"
-                          multiple=""
-                          type="file"
-                          name="col_gallery"
-                          id="col_gallery"
-                          style="
-                            position: absolute;
-                            right: 0px;
-                            top: 0px;
-                            font-family: Arial;
-                            font-size: 118px;
-                            margin: 0px;
-                            padding: 0px;
-                            cursor: pointer;
-                            opacity: 0;
-                            height: 100%;
-                          "
-                          accept=".png, .jpg, .jpeg"
-                          class="unavailable"
-                        />
-                      </div>
-                      <div class="image-box image-preview js-upload-widget-preview"></div>
-                    </div>
-                    <div class="upload__require-box upload__require-box-small">
-                      <div class="require-box__item">
-                        <p class="small_bold">
-                          Допустимые форматы изображения: JPG, JPEG, PNG.
-                        </p>
-                      </div>
-                      <div class="require-box__item">
-                        <p class="small_bold">
-                          Размер каждого файла не более 2 Мб.
-                        </p>
-                      </div>
-                      <div class="require-box__item">
-                        <p class="small_bold">
-                          Для красоты вашей галереи рекомендуем вам <br> использовать изображения одной ориентации
-                        </p>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

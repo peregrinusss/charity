@@ -5723,7 +5723,6 @@ input.input-range-dis:focus {
 }
 
 .input-file-gallery__disabled {
-  opacity: 0.6;
   pointer-events: none;
 }
 
